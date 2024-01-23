@@ -1,0 +1,49 @@
+.Home{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 7em;
+}
+
+.Text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.Greetings{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.WhoIam{
+    font-size: 2em;
+    font-family: 'Oregano';
+    color: #6A5ACD;
+    font-weight: bold;
+}
+
+.Image{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Image img{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.Image-Div{
+    width: 400px;
+    height: 400px;
+    background-color: #6A5ACD;
+    border-radius: 10em 12em 10em 16em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

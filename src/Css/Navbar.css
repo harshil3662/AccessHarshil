@@ -1,0 +1,58 @@
+*{
+    margin: 0em;
+}
+
+.Navbar{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #DCDCDC;
+    box-shadow: 0 4px 2px -2px rgba(74, 74, 74, 0.2);
+    padding: 0.5em;
+}
+
+.Logo{
+    font-family: 'Great Vibes';
+    font-size: 2.3em;
+    color: #6A5ACD;
+    font-weight: 700;
+    padding-top: 0.3em;
+}
+
+.Tabs{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Oregano';
+    font-size: 1em;
+}
+
+.Link{
+    margin: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 0.5em;
+    color: #6A5ACD;
+    border-bottom: 3px solid white;
+    font-weight: 500;
+}
+
+.Link:hover{
+    border-bottom: 3px solid #6A5ACD;
+    background-color: #E6E6FA;
+    color: #6A5ACD;
+    padding: 0.5em;
+}
+
+@media screen and (max-width: 600px) {
+    .Navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .Navbar {
+      display: block;
+      margin: 5px 0;
+    }
+  }
