@@ -14,7 +14,7 @@ function Navbar() {
 
   return (
     <div className='Navbar'>
-      <div className='Logo'>Harshil Vaghani</div>
+      <Link to={"/"} className='Logo'>Harshil Vaghani</Link>
       <div className='Tabs'>
         <Link to={"/"}
           className={`Link ${hover}`}
