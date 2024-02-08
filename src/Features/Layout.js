@@ -1,12 +1,13 @@
 import React from 'react'
 import { Outlet } from "react-router-dom"
 import Navbar from './Navbar'
+import { Container } from 'react-bootstrap'
 
 function Layout() {
   return (
-    <div className="container">
-        <Navbar/>
-        <Outlet/>
+    <div>
+      <Navbar/>
+      <Outlet/>
     </div>
   )
 }

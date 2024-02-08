@@ -1,113 +1,46 @@
-.Home{
-    display: flex;
+.ctn{
+    width: 100%;
+    height: 100%;
 }
 
-.Text{
-    margin-top: 10em;
-    margin-left: 7em;
-    width: 50%;
-    display: grid;
-    grid-template-rows: auto auto auto auto;
-    row-gap: 4em;
+.ctn-row{
+    width: 100%;
+    height: 100%;
 }
 
-.Greetings{
-    font-size: 3em;
+.hv-greet-msg{
     font-weight: bold;
+    font-family: "Philosopher";
+    font-weight: bold;
+    font-size: 3em;
 }
 
-.WhoIam{
-    font-size: 2em;
+.hv-position{
+    font-size: 2.5em;
     font-family: 'Oregano';
     color: #FF6347;
-    font-weight: bold;
 }
 
-.resume-btn{
-    color: #6A5ACD;
-    font-weight: 600;
-    border-radius: 2em;
-    padding: 1em;
-    border: none;
-    border-bottom: 3px solid #6A5ACD;
-    background-color: #E6E6FA;
-    cursor: pointer;
-}
-
-.resume-btn:hover{
+.hv-btn{
     background-color: #6A5ACD;
     color: white;
-    border-bottom: 3px solid #E6E6FA;
-}
-
-.links{
-    display: grid;
-    grid-template-columns: auto auto;
-    column-gap: 1em;
-    width: fit-content;
-}
-
-.links a{
-    width: 3em;
-    height: 3em;
-}
-
-.links a:hover{
-    opacity: 0.8;
+    border-radius: 0.5em;
+    border: none;
+    padding: 0.5em;
 }
 
 #linkedin{
-    width: 100%;
-    height: 100%;
+    width: 1.5em;
+    height: 1.5em;
 }
 
 #github{
-    width: 100%;
-    height: 100%;
-}
-
-.Image{
-    margin: 5em;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.Image-Div{
-    width: 200px;
-    height: 200px;
-    position: relative;
-}
-
-.profile-div{
-    margin-top: 4em;
-}
-
-.profile-btn{
-    color: #6A5ACD;
-    font-weight: 600;
-    border-radius: 2em;
-    padding: 1em;
-    border: none;
-    border-bottom: 3px solid #6A5ACD;
-    background-color: white;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.profile-btn:hover{
-    background-color: white;
-    color: #6A5ACD;
-    border-bottom: 3px solid #6A5ACD;
+    width: 1.5em;
+    height: 1.5em;
 }
 
 #avatar{
-    width: 70%;
-    height: 70%;
-    position: absolute;
-    z-index: 1;
-    left: 0em;
-    bottom: 0em;
+    width: 340px;
+    height: 300px;
+    border-radius: 50%;
 }

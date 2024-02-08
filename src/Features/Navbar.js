@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import { Link } from "react-router-dom"
 import '../Css/Navbar.css'
+import { Container,Row, Col,Stack } from 'react-bootstrap'
 
 function Navbar() {
 
@@ -13,45 +14,37 @@ function Navbar() {
   }
 
   return (
-    <div className='Navbar'>
-      <Link to={"/"} className='Logo'>Harshil Vaghani</Link>
-      <div className='Tabs'>
-        <Link to={"/"}
-          className={`Link ${hover}`}
-          onMouseOver={() => mouseOverHandle("4em 2em 3em 1em")}
-          style={style}
-        >
-          Home
-        </Link>
-        <Link to={"/about"} 
-          className={`Link ${hover}`}
-          onMouseOver={() => mouseOverHandle("1em 3em 2em 4em")}
-          style={style}
-          >
-          About
-        </Link>
-        <Link to={"/skills"} 
-          className={`Link ${hover}`}
-          onMouseOver={() => mouseOverHandle("4em 1em 3em 2em")}
-          style={style}
-          >
-          Skills
-        </Link>
-        <Link to={"/projects"} 
-          className={`Link ${hover}`}
-          onMouseOver={() => mouseOverHandle("4em 5em 3em 6em")}
-          style={style}
-          >
-          Projects
-        </Link>
-        <Link to={"/contact"} 
-          className={`Link ${hover}`}
-          onMouseOver={() => mouseOverHandle("4em 3em 6em 5em")}
-          style={style}
-          >
-          Contact
-        </Link>
-      </div>
+    <div className='hv-nav'>
+      <Container className='py-2 px-2 border' fluid>
+        <Row>
+          <Col className='d-flex justify-content-center align-items-center'>
+            <Link to={"/"}>
+              <img id='hv' src='hv.png' alt='Harshil Vaghani'/>
+            </Link>
+          </Col>
+          <Col className='d-flex justify-content-center align-items-center mx-5'>
+            <Container className='d-flex justify-content-end align-items-center' md="auto">
+              <Stack direction='horizontal' gap={5}>
+                <div>
+                  <Link to={"/"} className={`link-name`}>Home</Link>
+                </div>
+                <div>
+                  <Link to={"/about"} className={`link-name`}>About</Link>
+                </div>
+                <div>
+                  <Link to={"/skills"} className={`link-name`}>Skills</Link>
+                </div>
+                <div>
+                  <Link to={"/projects"} className={`link-name`}>Projects</Link>
+                </div>
+                <div>
+                  <Link to={"/contact"} className={`link-name`}>Contact</Link>
+                </div>
+              </Stack>
+            </Container>
+          </Col>
+        </Row>
+      </Container>
     </div>
   )
 }
