@@ -1,6 +1,6 @@
 #root{
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    background-image: linear-gradient(to right, white , #E6E6FA);
+    background-color: black;
+    height: 100%;
 }

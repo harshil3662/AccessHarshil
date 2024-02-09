@@ -5,21 +5,13 @@ import { Container,Row, Col,Stack } from 'react-bootstrap'
 
 function Navbar() {
 
-  const [hover,setHover] = useState('')
-  const [style,setStyle] = useState({})
-
-  const mouseOverHandle = (shape) =>{
-    setHover('hovered')
-    setStyle({borderRadius: shape})
-  }
-
   return (
-    <div className='hv-nav'>
-      <Container className='py-2 px-2 border' fluid>
+    <div className="hv-nav">
+      <Container className='py-2 px-2' fluid>
         <Row>
           <Col className='d-flex justify-content-center align-items-center'>
             <Link to={"/"}>
-              <img id='hv' src='hv.png' alt='Harshil Vaghani'/>
+              <img id='hv' src='logo3.png' alt='Harshil Vaghani'/>
             </Link>
           </Col>
           <Col className='d-flex justify-content-center align-items-center mx-5'>

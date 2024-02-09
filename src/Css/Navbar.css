@@ -1,16 +1,17 @@
 .hv-nav{
-    background-color: white;
+    background-color: rgb(27, 27, 27);
 }
 
 #hv{
-    width: 250px;
+    margin: 0.5em;
+    width: 270px;
     height: 60px;
 }
 
 .link-name{
-    font-family: 'Oregano';
-    font-size: 1.5em;
-    color: black;
+    font-family: 'Philosopher', serif;
+    font-size: 1.2em;
+    color: #D3D3D3;
     text-decoration: none;
     font-weight: 500;
 }
