@@ -1,5 +1,5 @@
 .hv-nav{
-    background-color: rgb(27, 27, 27);
+    background-color: #1b1b1b;
 }
 
 #hv{
@@ -8,14 +8,25 @@
     height: 60px;
 }
 
+.tabbar{
+    cursor: none;
+}
+
 .link-name{
+    padding: 0.5em;
     font-family: 'Philosopher', serif;
-    font-size: 1.2em;
+    font-size: 1em;
     color: #D3D3D3;
     text-decoration: none;
     font-weight: 500;
+    transition: 0.2s;
+    cursor: none;
+    font-weight: bold;
 }
 
 .link-name:hover{
-    border-bottom: 3px solid #6A5ACD;
+    cursor: none;
+    background-color: #6A5ACD;
+    border-radius: 2em;
+    font-weight: bold;
 }

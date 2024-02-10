@@ -1,3 +1,5 @@
+
+
 .vertical-line {
     border-left: 1px solid #808080;
     height: 50%;
@@ -19,43 +21,66 @@
 .hv-btn{
     background-color: black;
     color: #6A5ACD;
-    border-radius: 0.5em;
+    border-radius: 2em;
     border: 1px solid #6A5ACD;
     padding: 0.5em;
+    font-weight: bold;
+    cursor: none;
 }
 
 .hv-btn:hover{
+    cursor: none;
     background-color: #6A5ACD;
     color: white;
+    font-weight: 500;
 }
 
 .links{
     display: grid;
-    grid-template-columns: auto auto auto;
-    column-gap: 2em;
+    grid-template-columns: 1.7em 1.7em 1.7em;
+    column-gap: 1em;
     width: fit-content;
+    height: 1.7em;
 }
 
 #linkedin{
     width: 1.5em;
     height: 1.5em;
+    transition: 0.2s;
+}
+
+#linkedin:hover{
+    width: 1.7em;
+    height: 1.7em;
 }
 
 #github{
     width: 1.5em;
     height: 1.5em;
+    transition: 0.2s;
+}
+
+#github:hover{
+    width: 1.7em;
+    height: 1.7em;
 }
 
 #instagram{
     width: 1.5em;
     height: 1.5em;
+    transition: 0.2s;
+}
+
+#instagram:hover{
+    width: 1.7em;
+    height: 1.7em;
 }
 
 .circle{
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background-image: linear-gradient(to bottom right, #DCDCDC, #696969);
+    background-image: linear-gradient(to bottom right, #DCDCDC, #1b1b1b);
     overflow: hidden;
     position: relative;
 }
@@ -65,4 +90,5 @@
     height: 250px;
     position: absolute;
     bottom: 0em;
+    opacity: 0.8;
 }

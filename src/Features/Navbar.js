@@ -16,7 +16,7 @@ function Navbar() {
           </Col>
           <Col className='d-flex justify-content-center align-items-center mx-5'>
             <Container className='d-flex justify-content-end align-items-center' md="auto">
-              <Stack direction='horizontal' gap={5}>
+              <Stack direction='horizontal' gap={3} className='tabbar'>
                 <div>
                   <Link to={"/"} className={`link-name`}>Home</Link>
                 </div>

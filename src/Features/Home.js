@@ -6,7 +6,7 @@ import { Container,Row, Col, Stack, Button } from 'react-bootstrap'
 function Home() {
 
   return (
-    <Container>
+    <Container fluid>
       <Row className='m-5'>
         <Col xs={6}>
           <Row className='hv-home-col1-div1 m-5'>Hello! It's great to meet you.</Row>
