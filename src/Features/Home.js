@@ -8,7 +8,7 @@ function Home() {
   return (
     <Container fluid>
       <Row className='m-5'>
-        <Col xs={6}>
+        <Col xs={12} sm={12} md={6} lg={6} xl={6} xxl={6}>
           <Row className='hv-home-col1-div1 m-5'>Hello! It's great to meet you.</Row>
           <Row className='hv-home-col1-div2 m-5'>I'm here to innovate web development
             turning ideas into innovative reality and creative solutions.
@@ -39,9 +39,9 @@ function Home() {
         <Col xs={1} className='d-flex justify-content-center align-items-center'>
           <div className='vertical-line'></div>
         </Col>
-        <Col xs={5} className='d-flex justify-content-center align-items-center'>
+        <Col xs={12} sm={12} md={5} lg={5} xl={5} xxl={5} className='d-flex justify-content-center align-items-center'>
           <Row className='circle'>
-            <img id="avatar" src='avatar.png' alt='avatar'/>
+            <img id="avatar" className='img-fluid' src='avatar.png' alt='avatar'/>
           </Row>
         </Col>
       </Row>

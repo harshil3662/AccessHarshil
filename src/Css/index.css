@@ -1,6 +1,5 @@
 #root{
     display: flex;
     flex-direction: column;
-    background-color: black;
-    height: 100vh;
+    background-color: #1b1b1b;
 }
