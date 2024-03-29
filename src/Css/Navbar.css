@@ -1,15 +1,34 @@
 .hv-nav{
-    background-color: black;
+    background-color: #1b1b1b;
 }
 
 #hv{
-    margin: 0.5em;
-    width: 270px;
-    height: 60px;
+    width: 135px;
+    height: 90px;
 }
 
-.tabbar{
-    cursor: none;
+.toggle{
+    font-size: 2em;
+}
+
+.icons{
+    width: 2em;
+    height: 2em;
+}
+
+.toggle:hover{
+    cursor: pointer;
+}
+
+.sidebar{
+    top: 80px;
+    right: 30px;
+    position: absolute;
+    border-radius: 1em;
+    width: 300px;
+    box-shadow: 3px 4px 8px 5px rgb(17, 17, 17);
+    z-index: 999;
+    background-color: #1b1b1b;
 }
 
 .link-name{
@@ -20,13 +39,25 @@
     text-decoration: none;
     font-weight: 500;
     transition: 0.2s;
-    cursor: none;
-    font-weight: bold;
 }
 
-.link-name:hover{
-    cursor: none;
-    background-color: #6A5ACD;
-    border-radius: 2em;
-    font-weight: bold;
+.item{
+    padding: 0.5em;
+    border-bottom: 1px solid #5b5b5b;
+    text-decoration: none;
+}
+
+.item:hover{
+    background-color: #141414;
+    text-decoration: none;
+}
+
+.item-end{
+    text-decoration: none;
+    padding: 0.5em;
+}
+
+.item-end:hover{
+    background-color: #141414;
+    text-decoration: none;
 }

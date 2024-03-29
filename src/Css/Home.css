@@ -1,4 +1,6 @@
-
+.home{
+    height: 100vh;
+}
 
 .vertical-line {
     border-left: 1px solid #808080;
@@ -6,78 +8,53 @@
 }  
 
 .hv-home-col1-div1{
-    font-weight: bold;
     font-family: "Philosopher";
+    color: #6A5ACD;
     font-size: 3em;
-    color: #C0C0C0;
 }
 
 .hv-home-col1-div2{
-    font-size: 2em;
     font-family: 'Oregano';
     color: #C0C0C0;
+    font-size: 2em;
 }
 
 .hv-btn{
-    background-color: #1b1b1b;
-    color: #C0C0C0;
+    background-color: #2d283e;
+    font-family: sans-serif;
+    color: #978dd7;
     border-radius: 2em;
-    border: 1px solid #C0C0C0;
-    padding: 0.5em;
-    font-weight: bold;
+    border: none;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
     cursor: none;
+    transition: 0.3s;
 }
 
 .hv-btn:hover{
     cursor: none;
     background-color: #6A5ACD;
     color: white;
-    font-weight: 500;
+    border: none;
 }
 
 .links{
     display: grid;
-    grid-template-columns: 1.7em 1.7em 1.7em;
-    column-gap: 1em;
+    grid-template-columns: auto auto auto;
+    column-gap: 0.5em;
     width: fit-content;
-    height: 1.7em;
-    cursor: none;
+    height: 2em;
 }
 
-#linkedin{
-    width: 1.5em;
-    height: 1.5em;
-    transition: 0.2s;
+div{
+    color: #8e8e8e;
 }
 
-#linkedin:hover{
-    width: 1.7em;
-    height: 1.7em;
-    cursor: none;
-}
-
-#github{
-    width: 1.5em;
-    height: 1.5em;
-    transition: 0.2s;
-}
-
-#github:hover{
-    width: 1.7em;
-    height: 1.7em;
-    cursor: none;
-}
-
-#instagram{
-    width: 1.5em;
-    height: 1.5em;
-    transition: 0.2s;
-}
-
-#instagram:hover{
-    width: 1.7em;
-    height: 1.7em;
-    cursor: none;
+.link-img{
+    width: 2em;
+    height: 2em;
 }
 
 .circle{
@@ -91,10 +68,53 @@
     transition: 0.5s;
 }
 
+.circle:hover{
+    cursor: none;
+}
+
 #avatar{
     width: 300px;
-    height: 250px;
+    height: 240px;
     position: absolute;
-    border-radius: 50%;
     bottom: 0em;
+}
+
+@media screen and (width <= 576px) {
+    .hv-home-col1-div1{
+        font-size: 1.8em;
+    }
+
+    .hv-home-col1-div2{
+        font-size: 1.3em;
+    }
+
+    .circle{
+        width: 200px;
+        height: 200px;
+    }
+    
+    #avatar{
+        width: 200px;
+        height: 150px;
+    }
+}
+
+@media screen and (576px <= width <= 768px) {
+    .hv-home-col1-div1{
+        font-size: 2em;
+    }
+
+    .hv-home-col1-div2{
+        font-size: 1.5em;
+    }
+
+    .circle{
+        width: 250px;
+        height: 250px;
+    }
+    
+    #avatar{
+        width: 250px;
+        height: 200px;
+    }
 }
