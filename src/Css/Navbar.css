@@ -7,13 +7,19 @@
     height: 90px;
 }
 
+.toggle-btn{
+    background-color: #1b1b1b;
+    border: none;
+    color: #C0C0C0;
+}
+
 .toggle{
     font-size: 2em;
 }
 
 .icons{
-    width: 2em;
-    height: 2em;
+    width: 1.3em;
+    height: 1.3em;
 }
 
 .toggle:hover{
@@ -21,43 +27,31 @@
 }
 
 .sidebar{
-    top: 80px;
+    top: 70px;
     right: 30px;
     position: absolute;
     border-radius: 1em;
-    width: 300px;
-    box-shadow: 3px 4px 8px 5px rgb(17, 17, 17);
+    width: 200px;
+    box-shadow: 3px 4px 10px 8px rgb(17, 17, 17);
     z-index: 999;
     background-color: #1b1b1b;
+    border: 1px solid #3c3c3c;
 }
 
 .link-name{
-    padding: 0.5em;
-    font-family: 'Philosopher', serif;
-    font-size: 1em;
+    font-family: "PT Serif", serif;
+    font-size: 0.8em;
     color: #D3D3D3;
     text-decoration: none;
-    font-weight: 500;
     transition: 0.2s;
 }
 
 .item{
-    padding: 0.5em;
-    border-bottom: 1px solid #5b5b5b;
     text-decoration: none;
+    transition: 0.5s;
 }
 
 .item:hover{
-    background-color: #141414;
-    text-decoration: none;
-}
-
-.item-end{
-    text-decoration: none;
-    padding: 0.5em;
-}
-
-.item-end:hover{
     background-color: #141414;
     text-decoration: none;
 }
