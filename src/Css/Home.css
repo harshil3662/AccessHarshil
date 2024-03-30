@@ -9,20 +9,20 @@
 
 .hv-home-col1-div1{
     font-family: "Philosopher";
-    color: #6A5ACD;
+    color: #FF6347;
     font-size: 3em;
 }
 
 .hv-home-col1-div2{
-    font-family: 'Oregano';
+    font-family: "PT Serif", serif;
     color: #C0C0C0;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .hv-btn{
-    background-color: #2d283e;
+    background-color: #412a25;
     font-family: sans-serif;
-    color: #978dd7;
+    color: #FF6347;
     border-radius: 2em;
     border: none;
     padding-top: 0.5em;
@@ -35,7 +35,7 @@
 
 .hv-btn:hover{
     cursor: none;
-    background-color: #6A5ACD;
+    background-color: #FF6347;
     color: white;
     border: none;
 }

@@ -2,9 +2,20 @@
     background-color: #1b1b1b;
 }
 
-#hv{
-    width: 135px;
-    height: 90px;
+#logo{
+    width: 60px;
+    height: 60px;
+}
+
+#first_name{
+    width: 80px;
+    height: 80px;
+}
+
+#last_name{
+    margin-left: 0.5em;
+    width: 80px;
+    height: 80px;
 }
 
 .toggle-btn{
@@ -18,40 +29,93 @@
 }
 
 .icons{
-    width: 1.3em;
-    height: 1.3em;
+    width: 2em;
+    height: 2em;
 }
 
 .toggle:hover{
     cursor: pointer;
 }
 
-.sidebar{
-    top: 70px;
-    right: 30px;
+.blur-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: backdrop-filter 0.5s ease;
+    backdrop-filter: blur(0px);
+    z-index: 98;
+}
+
+.blur-background.active {
+    backdrop-filter: blur(40px);
+}
+
+.sidebar-view{
+    top: 10%;
+    right: 5%;
     position: absolute;
-    border-radius: 1em;
-    width: 200px;
-    box-shadow: 3px 4px 10px 8px rgb(17, 17, 17);
     z-index: 999;
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 2em;
+    transition: display 0.5s;
+}
+
+.sidebar{
+    top: 80px;
+    right: 30px;
+    border-radius: 1em;
+    width: 300px;
+    box-shadow: 3px 4px 10px 2px rgb(17, 17, 17);
     background-color: #1b1b1b;
     border: 1px solid #3c3c3c;
+    transition: 0.3s;
+}
+
+.sidebar:hover{
+    transform: scale(1.02);
+    box-shadow: 3px 4px 20px 8px rgb(17, 17, 17);
+}
+
+#close{
+    width: 20px;
+    height: 20px;
+}
+
+.close-btn{
+    border-radius: 50%;
+    background-color: #1b1b1b;
+    border: 1px solid #3c3c3c;
+    color: #C0C0C0;
+    float: right;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 3px 4px 10px 2px rgb(17, 17, 17);
+    transition: 0.3s;
+}
+
+.close-btn:hover{
+    transform: scale(1.15);
+    box-shadow: 3px 4px 20px 8px rgb(17, 17, 17);
 }
 
 .link-name{
     font-family: "PT Serif", serif;
-    font-size: 0.8em;
+    font-size: 1em;
     color: #D3D3D3;
     text-decoration: none;
     transition: 0.2s;
 }
 
 .item{
+    border-radius: 0.5em;
     text-decoration: none;
-    transition: 0.5s;
+    transition: 0.1s;
 }
 
 .item:hover{
-    background-color: #141414;
+    background-color: rgb(19, 19, 19);
     text-decoration: none;
 }
