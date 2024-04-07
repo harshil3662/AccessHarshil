@@ -1,0 +1,95 @@
+.about{
+    margin-bottom: 100px;
+}
+
+.head{
+    font-size: 3em;
+    font-family: "Kalnia", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #B0C4DE;
+}
+
+.introduction{
+    border-radius: 3em;
+    background-image: linear-gradient(to bottom right, #26292c, #1e272f);
+}
+
+.intro-head{
+    font-size: 2em;
+    font-family: "Kalnia", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #4682B4;
+}
+
+.introduction-box{
+    border-left: 3px solid #4682B4;
+    width: 65%;
+}
+
+.intro{
+    font-size: 1.2em;
+    font-weight: 300;
+    font-family: "Marcellus", serif;
+    color: white;
+}
+
+.experience{
+    border-radius: 3em;
+    background-image: linear-gradient(to bottom right, #26292c, #1e272f);
+}
+
+.experience-head{
+    font-size: 2em;
+    font-family: "Kalnia", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #4682B4;
+}
+
+.experience-box{
+    border-left: 3px solid #4682B4;
+    width: 65%;
+}
+
+.company-name{
+    font-size: 1.2em;
+    font-family: "Marcellus", serif;
+    font-weight: 800;
+    color: #B0C4DE;
+}
+
+.timeline{
+    font-size: 1.1em;
+    font-family: "Marcellus", serif;
+    font-weight: 500;
+    color: #B0C4DE;
+}
+
+.exp{
+    font-size: 1.2em;
+    font-weight: 300;
+    font-family: "Marcellus", serif;
+    color: white;
+}
+
+.links{
+    display: inline;
+    font-family: "Marcellus", serif;
+    font-size: 1em;
+    text-decoration: none;
+    color: #B0C4DE;
+}
+
+.cv{
+    text-decoration: none;
+    background-color: #16476f;
+    font-family: "Marcellus", serif;
+    color: #c4d5eb;
+    border-radius: 2em;
+    border: none;
+    padding: 0.8em;
+    cursor: pointer;
+    font-weight: bold;
+}

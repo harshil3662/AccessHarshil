@@ -2,26 +2,37 @@
     background-color: #1b1b1b;
 }
 
-#logo{
-    width: 60px;
-    height: 60px;
+.link{
+    text-decoration: none;
+    cursor: pointer;
 }
 
-#first_name{
-    width: 80px;
-    height: 80px;
+.link:hover{
+    text-decoration: none;
 }
 
-#last_name{
-    margin-left: 0.5em;
-    width: 80px;
-    height: 80px;
+.logo{
+    font-size: 2.5em;
+    font-family: "Kalnia", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #4682B4;
+    cursor: pointer;
+}
+
+.dot{
+    font-size: 3.5em;
+    font-family: "Kalnia", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #B0C4DE;
+    cursor: pointer;
 }
 
 .toggle-btn{
     background-color: #1b1b1b;
     border: none;
-    color: #C0C0C0;
+    color: #B0C4DE;
 }
 
 .toggle{
@@ -43,13 +54,14 @@
     left: 0;
     width: 100%;
     height: 100%;
-    transition: backdrop-filter 0.5s ease;
+    transition: backdrop-filter 0.2s ease-in;
     backdrop-filter: blur(0px);
-    z-index: 98;
+    z-index: -1;
 }
 
 .blur-background.active {
     backdrop-filter: blur(40px);
+    z-index: 98;
 }
 
 .sidebar-view{
@@ -68,15 +80,15 @@
     right: 30px;
     border-radius: 1em;
     width: 300px;
-    box-shadow: 3px 4px 10px 2px rgb(17, 17, 17);
+    box-shadow: 3px 4px 10px 2px black;
     background-color: #1b1b1b;
     border: 1px solid #3c3c3c;
     transition: 0.3s;
 }
 
 .sidebar:hover{
-    transform: scale(1.02);
-    box-shadow: 3px 4px 20px 8px rgb(17, 17, 17);
+    transform: scale(1.06);
+    box-shadow: 3px 4px 20px 8px black;
 }
 
 #close{
@@ -97,12 +109,12 @@
 }
 
 .close-btn:hover{
-    transform: scale(1.15);
+    transform: scale(1.20);
     box-shadow: 3px 4px 20px 8px rgb(17, 17, 17);
 }
 
 .link-name{
-    font-family: "PT Serif", serif;
+    font-family: "Karla", sans-serif;
     font-size: 1em;
     color: #D3D3D3;
     text-decoration: none;
@@ -116,6 +128,7 @@
 }
 
 .item:hover{
+    transform: scale(1.06);
     background-color: rgb(19, 19, 19);
     text-decoration: none;
 }
