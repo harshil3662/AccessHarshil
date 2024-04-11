@@ -1,5 +1,5 @@
 .hv-nav{
-    background-color: #1b1b1b;
+    background-color: transparent;
 }
 
 .link{
@@ -30,7 +30,7 @@
 }
 
 .toggle-btn{
-    background-color: #1b1b1b;
+    background-color: transparent;
     border: none;
     color: #B0C4DE;
 }

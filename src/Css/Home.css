@@ -3,21 +3,36 @@
     margin-bottom: 100px;
 }
 
-.col1{
-    border-radius: 3em;
-    background-image: linear-gradient(to bottom right, #26292c, #1e272f);
-    height: fit-content;
+.headline{
+    font-family: "Kalnia", serif;
+    color: #B0C4DE;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px #3d3d3d;
 }
 
-.vertical-line {
-    border-left: 1px solid #808080;
-    height: 50%;
-}  
+.col1{
+    border-radius: 3em;
+    background-image: linear-gradient(to bottom right, #25272b, #232528);
+    height: fit-content;
+    transition: 0.3s;
+}
+
+.col1:hover{
+    box-shadow: 5px 5px 15px 7px black;
+    transform: scale(1.06);
+}
 
 .hv-home-col1-div1{
     font-family: "Kalnia", serif;
     color: #B0C4DE;
     font-size: 3em;
+    text-shadow: 2px 4px 4px #3b3b3b;
+}
+
+.name{
+    color: #4b87b9;
+    text-shadow: 2px 4px 4px #333333;
+    display: inline-block;
 }
 
 .hv-home-col1-div2{
@@ -27,14 +42,15 @@
 }
 
 .hv-btn{
-    background-color: #16476f;
-    font-family: "Marcellus", serif;
+    background-color: #265983;
     color: #c4d5eb;
+    font-family: "Marcellus", serif;
     border-radius: 2em;
     border: none;
     padding: 0.8em;
     cursor: pointer;
     font-weight: bold;
+    transition: 0.3s;
 }
 
 .hv-btn:hover{
@@ -60,59 +76,154 @@ div{
 }
 
 .circle{
-    width: 300px;
-    height: 300px;
+    width: 360px;
+    height: 360px;
     border-radius: 50%;
-    background-image: linear-gradient(to bottom right, #d3e5f4, #29618f);
+    background-image: linear-gradient(to bottom right, #d3e5f4, #8cbce4);
     overflow: hidden;
     position: relative;
     border: 3px solid #B0C4DE;
     transition: 0.5s;
 }
 
+.circle:hover{
+    box-shadow: 10px 10px 15px 7px black;
+    transform: scale(1.06);
+}
+
 #avatar{
-    width: 300px;
-    height: 240px;
+    width: 360px;
+    height: 310px;
     position: absolute;
     bottom: 0em;
 }
 
 @media screen and (width <= 576px) {
+
+    .headline{
+        font-size: 1em;
+    }
+
     .hv-home-col1-div1{
-        font-size: 1.8em;
+        font-size: 1.6em;
     }
 
     .hv-home-col1-div2{
-        font-size: 1.3em;
+        font-size: 0.8em;
     }
 
     .circle{
-        width: 200px;
-        height: 200px;
+        width: 220px;
+        height: 220px;
     }
     
     #avatar{
-        width: 200px;
-        height: 150px;
+        width: 220px;
+        height: 165px;
     }
 }
 
 @media screen and (576px <= width <= 768px) {
+
+    .headline{
+        font-size: 1.2em;
+    }
+
     .hv-home-col1-div1{
         font-size: 2em;
     }
 
     .hv-home-col1-div2{
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     .circle{
-        width: 250px;
-        height: 250px;
+        width: 270px;
+        height: 270px;
     }
     
     #avatar{
-        width: 250px;
-        height: 200px;
+        width: 270px;
+        height: 215px;
+    }
+}
+
+@media screen and (768px <= width <= 992px) {
+
+    .headline{
+        font-size: 1.3em;
+    }
+
+    .hv-home-col1-div1{
+        font-size: 2em;
+    }
+
+    .hv-home-col1-div2{
+        font-size: 1em;
+    }
+
+    .circle{
+        width: 300px;
+        height: 300px;
+    }
+    
+    #avatar{
+        width: 300px;
+        height: 245px;
+    }
+}
+
+@media screen and (992px <= width <= 1200px) {
+
+    .headline{
+        font-size: 1.5em;
+    }
+
+    .hv-home-col1-div1{
+        font-size: 1.8em;
+    }
+
+    .hv-home-col1-div2{
+        font-size: 0.9em;
+    }
+
+    .circle{
+        width: 330px;
+        height: 330px;
+    }
+    
+    #avatar{
+        width: 330px;
+        height: 270px;
+    }
+}
+
+@media screen and (1200px <= width <= 1300px) {
+
+    .headline{
+        font-size: 1.6em;
+    }
+
+    .hv-home-col1-div1{
+        font-size: 2.5em;
+    }
+
+    .hv-home-col1-div2{
+        font-size: 1.25em;
+    }
+}
+
+@media screen and (1300px <= width <= 1400px) {
+
+    .headline{
+        font-size: 1.8em;
+    }
+
+    .hv-home-col1-div1{
+        font-size: 2.6em;
+    }
+
+    .hv-home-col1-div2{
+        font-size: 1.3em;
     }
 }
