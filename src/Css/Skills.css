@@ -1,0 +1,36 @@
+.skills{
+    margin-bottom: 100px;
+}
+
+.skill-box{
+    border-radius: 0.5em;
+    border: 1px solid #303030;
+}
+
+.skill-secction-name{
+    font-family: "Marcellus", serif;
+    color: #DCDCDC;
+    font-size: 1.2em;
+    font-family: "Kalnia", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.skill-name{
+    margin: 0.5em;
+    font-family: "Marcellus", serif;
+    padding: 1em;
+    font-size: 0.8em;
+    border: 1px solid #486985;
+    border-radius: 1.5em;
+    width: fit-content;
+    background-color: #1b2329;
+    color: #7dacd5;
+    transition: 0.3s;
+}
+
+.skill-name:hover{
+    background-color: #8ea8c9;
+    border: 1px solid #8ea8c9;
+    color: #011323;
+}

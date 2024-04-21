@@ -14,7 +14,7 @@ function Home() {
       <div className="col-12">
 
         <div className='m-5 text-center text-sm-center text-md-center d-flex justify-content-center justify-content-sm-center headline'>
-          Web app developer & MERN stack developer
+          Web application & MERN stack developer
         </div>
 
         <div className='row'>
@@ -28,7 +28,7 @@ function Home() {
               </div>
               <div className='m-5 text-center text-sm-center text-md-center text-lg-start text-xl-start'>
                 <Link to={"/about"}>
-                  <button className='hv-btn'>About Me</button>
+                  <button className='portfolio-btn'>About Me</button>
                 </Link>
               </div>
               <div className='m-5 d-flex justify-content-center justify-content-sm-center justify-content-md-center 

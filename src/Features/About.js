@@ -5,7 +5,7 @@ function About() {
   return (
     <div class="container about">
 
-      <div className='p-5 page-heading d-flex justify-content-center align-items-center'>About Me</div>
+      <div className='p-5 heading d-flex justify-content-center align-items-center'>About Me</div>
 
       <div className='col'>
 
@@ -52,7 +52,7 @@ function About() {
         
         <div className='row'>
           <div className='container d-flex justify-content-center align-items-center'>
-            <a className='cv-btn mt-5' href='https://drive.google.com/file/d/1HNVyHXM4Q87DApEYk9HLuwZmW7F5U_yQ/view?usp=sharing'>My Resume</a>
+            <a className='portfolio-btn mt-5' href='https://drive.google.com/file/d/1HNVyHXM4Q87DApEYk9HLuwZmW7F5U_yQ/view?usp=sharing'>My Resume</a>
           </div>
         </div>
       </div>

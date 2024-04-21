@@ -53,31 +53,31 @@ function Navbar() {
           <div ref={sidebarRef} className='sidebar p-4'>
             <Link to={"/"} className='row item p-2' onClick={toggleSidebar}>
               <div className='col-xxl-3 col-xl-3 col-md-3 col-sm-3 col-xs-3 col-3 d-flex justify-content-center align-items-center'>
-                <img className='icons' src='home1.png' alt='home'/>
+                <img className='icons' src='home.png' alt='home'/>
               </div>
               <div className='col-xxl-9 col-xl-9 col-md-9 col-sm-9 col-xs-9 col-9 d-flex justify-content-start align-items-center link-name my-2'>Home</div>
             </Link>
             <Link to={"/about"} className='row item p-2' onClick={toggleSidebar}>
               <div className='col-xxl-3 col-xl-3 col-md-3 col-sm-3 col-xs-3 col-3 d-flex justify-content-center align-items-center'>
-                <img className='icons' src='info1.png' alt='home'/>
+                <img className='icons' src='info.png' alt='home'/>
               </div>
               <div className='col-xxl-9 col-xl-9 col-md-9 col-sm-9 col-xs-9 col-9 d-flex justify-content-start align-items-center link-name my-2'>About</div>
             </Link>
             <Link to={"/skills"} className='row item p-2' onClick={toggleSidebar}>
               <div className='col-xxl-3 col-xl-3 col-md-3 col-sm-3 col-xs-3 col-3 d-flex justify-content-center align-items-center'>
-                <img className='icons' src='list1.png' alt='home'/>
+                <img className='icons' src='list.png' alt='home'/>
               </div>
               <div className='col-xxl-9 col-xl-9 col-md-9 col-sm-9 col-xs-9 col-9 d-flex justify-content-start align-items-center link-name my-2'>Skills</div>
             </Link>
             <Link to={"/projects"} className='row item p-2' onClick={toggleSidebar}>
               <div className='col-xxl-3 col-xl-3 col-md-3 col-sm-3 col-xs-3 col-3 d-flex justify-content-center align-items-center'>
-                <img className='icons' src='layers1.png' alt='home'/>
+                <img className='icons' src='layers.png' alt='home'/>
               </div>
               <div className='col-xxl-9 col-xl-9 col-md-9 col-sm-9 col-xs-9 col-9 d-flex justify-content-start align-items-center link-name my-2'>Projects</div>
             </Link>
             <Link to={"/contact"} className='row item p-2' onClick={toggleSidebar}>
               <div className='col-xxl-3 col-xl-3 col-md-3 col-sm-3 col-xs-3 col-3 d-flex justify-content-center align-items-center'>
-                <img className='icons' src='chat1.png' alt='home'/>
+                <img className='icons' src='chat.png' alt='home'/>
               </div>
               <div className='col-xxl-9 col-xl-9 col-md-9 col-sm-9 col-xs-9 col-9 d-flex justify-content-start align-items-center link-name my-2'>Contact</div>
             </Link>

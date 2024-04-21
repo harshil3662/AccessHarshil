@@ -2,7 +2,7 @@
     margin-bottom: 100px;
 }
 
-.page-heading{
+.heading{
     font-size: 3em;
     font-family: "Kalnia", serif;
     font-weight: 400;
@@ -66,22 +66,4 @@
     font-size: 1em;
     text-decoration: underline;
     color: #B0C4DE;
-}
-
-.cv-btn{
-    text-decoration: none;
-    background-color: #16476f;
-    font-family: "Marcellus", serif;
-    color: #c4d5eb;
-    border-radius: 2em;
-    border: none;
-    padding: 0.8em;
-    cursor: pointer;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.cv-btn:hover{
-    background-color: #8ea8c9;
-    color: #021e36;
 }
