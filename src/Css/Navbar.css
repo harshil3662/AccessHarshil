@@ -25,14 +25,14 @@
     font-family: "Kalnia", serif;
     font-weight: 400;
     font-style: normal;
-    color: #B0C4DE;
+    color: white;
     cursor: pointer;
 }
 
 .toggle-btn{
     background-color: transparent;
     border: none;
-    color: #B0C4DE;
+    color: white;
 }
 
 .toggle{

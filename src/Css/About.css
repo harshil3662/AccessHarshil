@@ -7,12 +7,12 @@
     font-family: "Kalnia", serif;
     font-weight: 400;
     font-style: normal;
-    color: #B0C4DE;
+    color: white;
 }
 
 .box{
     border-radius: 3em;
-    background-image: linear-gradient(to bottom right, #25272b, #232528);
+    background-color: #1f2224;
     transition: 0.3s;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .introduction{
-    border-left: 3px solid #4b87b9;
+    border-left: 3px solid #B0C4DE;
     width: 65%;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .experience{
-    border-left: 3px solid #4b87b9;
+    border-left: 3px solid #B0C4DE;
     width: 65%;
 }
 

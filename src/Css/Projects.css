@@ -1,0 +1,10 @@
+.projects{
+    margin-bottom: 100px;
+}
+
+.project{
+    width: 300px;
+    height: 300px;
+    border-radius: 1em;
+    background-color: #1f2224;
+}

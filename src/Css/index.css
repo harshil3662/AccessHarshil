@@ -1,5 +1,5 @@
 #root{
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(to bottom right, #151516, #111518);
+    background-color: #0b0b0d;
 }

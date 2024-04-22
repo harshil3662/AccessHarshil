@@ -3,13 +3,13 @@
 }
 
 .skill-box{
-    border-radius: 0.5em;
-    border: 1px solid #303030;
+    border-radius: 1em;
+    background-color: #1f2224;
 }
 
 .skill-secction-name{
     font-family: "Marcellus", serif;
-    color: #DCDCDC;
+    color: #7dacd5;
     font-size: 1.2em;
     font-family: "Kalnia", serif;
     font-weight: 400;
@@ -24,7 +24,7 @@
     border: 1px solid #486985;
     border-radius: 1.5em;
     width: fit-content;
-    background-color: #1b2329;
+    background-color: #181d21;
     color: #7dacd5;
     transition: 0.3s;
 }

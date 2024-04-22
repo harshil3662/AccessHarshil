@@ -5,7 +5,7 @@ function Skills() {
   return (
     <div className='container skills'>
       <div className='text-center heading mt-5'>Skills</div>
-      <div className='row d-flex justify-content-center align-items-start mt-5'>
+      <div className='row d-flex justify-content-center align-items-stretch mt-5'>
         <div className='col-12 col-sm-12 col-md-5 col-lg-2 col-xl-2 col-xxl-2 flex-fill skill-box m-3 p-2'>
           <div className='skill-secction-name text-center m-4'>Frontend</div>
           <div className='row m-4'>

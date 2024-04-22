@@ -12,7 +12,7 @@
 
 .col1{
     border-radius: 3em;
-    background-image: linear-gradient(to bottom right, #25272b, #232528);
+    background-color: #1f2224;
     height: fit-content;
     transition: 0.3s;
 }
@@ -24,7 +24,7 @@
 
 .hv-home-col1-div1{
     font-family: "Kalnia", serif;
-    color: #B0C4DE;
+    color: white;
     font-size: 3em;
     text-shadow: 2px 4px 4px #3b3b3b;
 }
@@ -76,7 +76,7 @@
     width: 360px;
     height: 360px;
     border-radius: 50%;
-    background-image: linear-gradient(to bottom right, #d3e5f4, #8cbce4);
+    background-image: linear-gradient(to bottom right, #ffffff, #515151);
     overflow: hidden;
     position: relative;
     border: 3px solid #B0C4DE;
