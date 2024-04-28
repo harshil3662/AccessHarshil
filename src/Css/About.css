@@ -16,11 +16,6 @@
     transition: 0.3s;
 }
 
-.box:hover{
-    box-shadow: 5px 5px 15px 7px black;
-    transform: scale(1.06);
-}
-
 .head{
     font-size: 2em;
     font-family: "Kalnia", serif;
