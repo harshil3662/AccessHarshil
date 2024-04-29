@@ -3,7 +3,12 @@
 }
 
 .skill-box{
+    border: 1.5px solid #1f2224;
     border-radius: 1em;
+    transition: 0.3s;
+}
+
+.skill-box:hover{
     background-color: #1f2224;
 }
 

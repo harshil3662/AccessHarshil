@@ -9,16 +9,12 @@ function Home() {
   const [hover3,setHover3] = useState('')
 
   return (
-    <div className='container d-flex justify-content-center justify-content-sm-center home'>
-
+    <div className='container home d-flex justify-content-center justify-content-sm-center'>
       <div className="col-12">
-
         <div className='m-5 text-center text-sm-center text-md-center d-flex justify-content-center justify-content-sm-center headline'>
           Web application & MERN stack developer
         </div>
-
         <div className='row'>
-
           <div className='mt-4 col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 order-2 order-sm-2 order-xs-2 order-md-2
           order-lg-1 order-xl-1 order-xxl-1 d-flex justify-content-center justify-content-sm-center'>
             <div className="m-5 col1">
@@ -65,16 +61,13 @@ function Home() {
               </div>
             </div>
           </div>
-
           <div className='col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 
             d-flex justify-content-center align-items-center order-1 order-sm-1 order-xs-1 order-md-1 order-lg-3 order-xl-3 order-xxl-3'>
             <div className='row circle'>
               <img id="avatar" src='avatar.png' alt='avatar'/>
             </div>
           </div>
-
         </div>
-
       </div>
     </div>
   )

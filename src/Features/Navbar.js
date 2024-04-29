@@ -1,89 +1,54 @@
-import React, { useState, useRef, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from "react-router-dom"
 import '../Css/Navbar.css'
 
 function Navbar() {
 
-  const [isOpen,setIsOpen] = useState(false)
-  const sidebarRef = useRef(null);
-  const toggleRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
 
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if ((sidebarRef.current && !sidebarRef.current.contains(event.target)) && 
-        (toggleRef.current && !toggleRef.current.contains(event.target))) 
-      {
-        setIsOpen(false);
-      }
-    };
-
-    document.addEventListener('mousedown', handleClickOutside);
-
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, []);
-
-  const toggleSidebar = () => {
-    setIsOpen(!isOpen);
+  const toggleVisibility = () => {
+    setIsVisible(!isVisible);
   };
 
   return (
-    <div className="hv-nav">
-      <div className='nav container-fluid'>
-        <div className='col-xl-4 d-flex justify-content-center align-items-center m-4'>
-          <Link className='link' to={"/"}>
-            <label className='logo'>Harshil</label> <label className='dot'>.</label>
-          </Link>
-        </div>
-        <div className='col d-flex justify-content-end align-items-center'>
-          <button ref={toggleRef} className='toggle-btn' onClick={toggleSidebar}>
-            <span class="material-symbols-outlined toggle ">more_horiz</span>
-          </button>
-        </div>
-      </div>
-      <div className={`blur-background ${isOpen ? 'active' : ''}`} />
-      {isOpen && 
-        <div className='sidebar-view'>
-          <div>
-            <div className='close-btn p-3' onClick={toggleSidebar}>
-              <img id='close' src='close.png' alt='close'/>
+    <div className="hv-nav sticky-top">
+      <div className='navbar'>
+        <div className='container-fluid d-flex justify-content-center align-items-center p-1'>
+          <div className='col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-10 col-10 d-flex justify-content-xxl-start justify-content-xl-start 
+          justify-content-lg-start justify-content-md-start justify-content-sm-center justify-content-center align-items-center'>
+            <Link className='link' to={"/"}>
+              <label className='logo'>Harshil</label> <label className='dot'>.</label>
+            </Link>
+          </div>
+          <div className='col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-10 col-10 d-flex justify-content-xxl-end justify-content-xl-end 
+          justify-content-lg-end justify-content-md-end justify-content-sm-center justify-content-center align-items-center'>
+            <div className='bar-box'>
+              <div className={`row bar ${isVisible ? 'visible' : ''} me-3 p-2`}>
+                <Link to={"/"} className='col item'>
+                  <div className='link-name my-2'>Home</div>
+                </Link>
+                <Link to={"/about"} className='col item'>
+                  <div className='link-name my-2'>About</div>
+                </Link>
+                <Link to={"/skills"} className='col item'>
+                  <div className='link-name my-2'>Skills</div>
+                </Link>
+                <Link to={"/projects"} className='col item'>
+                  <div className='link-name my-2'>Projects</div>
+                </Link>
+                <Link to={"/contact"} className='col item'>
+                  <div className='link-name my-2'>Contact</div>
+                </Link>
+              </div>
+            </div>
+            <div className='d-none d-sm-none d-md-block'>
+              <button className='toggle-btn' onClick={toggleVisibility}>
+                <span class="material-symbols-outlined toggle ">more_horiz</span>
+              </button>
             </div>
           </div>
-          <div ref={sidebarRef} className='sidebar p-4'>
-            <Link to={"/"} className='row item p-2' onClick={toggleSidebar}>
-              <div className='col-xxl-3 col-xl-3 col-md-3 col-sm-3 col-xs-3 col-3 d-flex justify-content-center align-items-center'>
-                <img className='icons' src='home.png' alt='home'/>
-              </div>
-              <div className='col-xxl-9 col-xl-9 col-md-9 col-sm-9 col-xs-9 col-9 d-flex justify-content-start align-items-center link-name my-2'>Home</div>
-            </Link>
-            <Link to={"/about"} className='row item p-2' onClick={toggleSidebar}>
-              <div className='col-xxl-3 col-xl-3 col-md-3 col-sm-3 col-xs-3 col-3 d-flex justify-content-center align-items-center'>
-                <img className='icons' src='info.png' alt='home'/>
-              </div>
-              <div className='col-xxl-9 col-xl-9 col-md-9 col-sm-9 col-xs-9 col-9 d-flex justify-content-start align-items-center link-name my-2'>About</div>
-            </Link>
-            <Link to={"/skills"} className='row item p-2' onClick={toggleSidebar}>
-              <div className='col-xxl-3 col-xl-3 col-md-3 col-sm-3 col-xs-3 col-3 d-flex justify-content-center align-items-center'>
-                <img className='icons' src='list.png' alt='home'/>
-              </div>
-              <div className='col-xxl-9 col-xl-9 col-md-9 col-sm-9 col-xs-9 col-9 d-flex justify-content-start align-items-center link-name my-2'>Skills</div>
-            </Link>
-            <Link to={"/projects"} className='row item p-2' onClick={toggleSidebar}>
-              <div className='col-xxl-3 col-xl-3 col-md-3 col-sm-3 col-xs-3 col-3 d-flex justify-content-center align-items-center'>
-                <img className='icons' src='layers.png' alt='home'/>
-              </div>
-              <div className='col-xxl-9 col-xl-9 col-md-9 col-sm-9 col-xs-9 col-9 d-flex justify-content-start align-items-center link-name my-2'>Projects</div>
-            </Link>
-            <Link to={"/contact"} className='row item p-2' onClick={toggleSidebar}>
-              <div className='col-xxl-3 col-xl-3 col-md-3 col-sm-3 col-xs-3 col-3 d-flex justify-content-center align-items-center'>
-                <img className='icons' src='chat.png' alt='home'/>
-              </div>
-              <div className='col-xxl-9 col-xl-9 col-md-9 col-sm-9 col-xs-9 col-9 d-flex justify-content-start align-items-center link-name my-2'>Contact</div>
-            </Link>
-          </div>
         </div>
-      }
+      </div>
     </div>
   )
 }

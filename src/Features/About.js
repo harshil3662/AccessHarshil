@@ -4,11 +4,8 @@ import { Link } from "react-router-dom"
 function About() {
   return (
     <div class="container about">
-
       <div className='p-5 heading d-flex justify-content-center align-items-center'>About Me</div>
-
       <div className='col'>
-
         <div className='row box p-5'>
           <div className='p-2 head d-flex justify-content-start align-items-center'>Intoduction</div>
           <div className='row'>
@@ -29,7 +26,6 @@ function About() {
             </div>
           </div>
         </div>
-
         <div className='row box p-5 mt-5'>
           <div className='p-2 head d-flex justify-content-start align-items-center'>Experience</div>
           <div className='row'>
@@ -49,7 +45,6 @@ function About() {
             </div>
           </div>
         </div>
-        
         <div className='row'>
           <div className='container d-flex justify-content-center align-items-center'>
             <a className='portfolio-btn mt-5' href='https://drive.google.com/file/d/1HNVyHXM4Q87DApEYk9HLuwZmW7F5U_yQ/view?usp=sharing'>My Resume</a>
