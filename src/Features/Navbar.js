@@ -5,9 +5,19 @@ import '../Css/Navbar.css'
 function Navbar() {
 
   const [isVisible, setIsVisible] = useState(false);
+  const [style, setStyle] = useState({});
+  const [icon,setIcon] = useState('more_horiz')
 
   const toggleVisibility = () => {
-    setIsVisible(!isVisible);
+    if (isVisible==true) {
+      setIsVisible(!isVisible);
+      setStyle({right:'0px',transition:'right 0.8s ease'})
+      setIcon('close')
+    } else {
+      setIsVisible(!isVisible);
+      setStyle({right:'-450px',transition:'right 0.8s ease'})
+      setIcon('more_horiz')
+    }
   };
 
   return (
@@ -22,8 +32,8 @@ function Navbar() {
           </div>
           <div className='col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-10 col-10 d-flex justify-content-xxl-end justify-content-xl-end 
           justify-content-lg-end justify-content-md-end justify-content-sm-center justify-content-center align-items-center'>
-            <div className='bar-box'>
-              <div className={`row bar ${isVisible ? 'visible' : ''} me-3 p-2`}>
+            <div className='bar-box overflow-hidden'>
+              <div className='row bar ms-3 me-3 p-2' style={style}>
                 <Link to={"/"} className='col item'>
                   <div className='link-name my-2'>Home</div>
                 </Link>
@@ -43,7 +53,7 @@ function Navbar() {
             </div>
             <div className='d-none d-sm-none d-md-block'>
               <button className='toggle-btn' onClick={toggleVisibility}>
-                <span class="material-symbols-outlined toggle ">more_horiz</span>
+                <span class="material-symbols-outlined toggle ">{ icon } </span>
               </button>
             </div>
           </div>

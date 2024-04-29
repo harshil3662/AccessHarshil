@@ -1,6 +1,6 @@
 .hv-nav{
     backdrop-filter: blur(30px);
-    background-color: rgba(11, 11, 13, 0.8);
+    background-color: rgba(11, 11, 13, 0.5);
     transition: 0.3s;
     border-bottom: 1px solid #2a2a2a;
 }
@@ -43,8 +43,10 @@
 }
 
 .bar{
+    position: relative;
+    right: -450px;
     background-color: rgba(50, 59, 64, 0.45);
-    border-radius: 10em;
+    border-radius: 5em;
     backdrop-filter: blur(30px);
 }
 
