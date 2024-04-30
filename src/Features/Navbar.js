@@ -8,8 +8,11 @@ function Bar({style}) {
   const [screenSize, setScreenSize] = useState('');
 
   useEffect(() => {
+
     const handleResize = () => {
       const width = window.innerWidth;
+      const height = window.innerHeight;
+      console.log(height)
       setScreenSize(width);
     };
 

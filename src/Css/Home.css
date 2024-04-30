@@ -42,12 +42,12 @@
 }
 
 .portfolio-btn{
+    font-size: 1em;
     background-color: #265983;
     color: #c4d5eb;
     font-family: "Marcellus", serif;
     border-radius: 2em;
     border: none;
-    padding: 0.8em;
     cursor: pointer;
     font-weight: bold;
     transition: 0.3s;
@@ -60,9 +60,6 @@
 }
 
 .social-networks{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    column-gap: 0.5em;
     width: fit-content;
     height: 2em;
 }
@@ -97,8 +94,51 @@
 
 @media screen and (width <= 576px) {
 
+    .col1{
+        border-radius: 2em;
+    }
+
     .headline{
         font-size: 1em;
+    }
+
+    .hv-home-col1-div1{
+        font-size: 1.3em;
+    }
+
+    .hv-home-col1-div2{
+        font-size: 0.7em;
+    }
+
+    .portfolio-btn{
+        font-size: 0.6em;
+    }
+
+    .social-networks{
+        width: fit-content;
+        height: 1.5em;
+    }
+
+    .network-img{
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    .circle{
+        width: 200px;
+        height: 200px;
+    }
+    
+    #avatar{
+        width: 200px;
+        height: 155px;
+    }
+}
+
+@media screen and (576px < width < 768px) {
+
+    .headline{
+        font-size: 1.2em;
     }
 
     .hv-home-col1-div1{
@@ -106,32 +146,40 @@
     }
 
     .hv-home-col1-div2{
+        font-size: 1em;
+    }
+
+    .portfolio-btn{
         font-size: 0.8em;
     }
 
     .circle{
-        width: 220px;
-        height: 220px;
+        width: 240px;
+        height: 240px;
     }
     
     #avatar{
-        width: 220px;
-        height: 165px;
+        width: 240px;
+        height: 190px;
     }
 }
 
-@media screen and (576px <= width <= 768px) {
+@media screen and (768px < width < 992px) {
 
     .headline{
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
 
     .hv-home-col1-div1{
-        font-size: 2em;
+        font-size: 1.8em;
     }
 
     .hv-home-col1-div2{
         font-size: 1em;
+    }
+
+    .portfolio-btn{
+        font-size: 0.8em;
     }
 
     .circle{
@@ -141,47 +189,55 @@
     
     #avatar{
         width: 270px;
-        height: 215px;
+        height: 210px;
     }
 }
 
-@media screen and (768px <= width <= 992px) {
-
-    .headline{
-        font-size: 1.3em;
-    }
-
-    .hv-home-col1-div1{
-        font-size: 2em;
-    }
-
-    .hv-home-col1-div2{
-        font-size: 1em;
-    }
-
-    .circle{
-        width: 300px;
-        height: 300px;
-    }
-    
-    #avatar{
-        width: 300px;
-        height: 245px;
-    }
-}
-
-@media screen and (992px <= width <= 1200px) {
+@media screen and (992px < width < 1200px) {
 
     .headline{
         font-size: 1.5em;
     }
 
     .hv-home-col1-div1{
-        font-size: 1.8em;
+        font-size: 1.9em;
     }
 
     .hv-home-col1-div2{
+        font-size: 1em;
+    }
+
+    .portfolio-btn{
         font-size: 0.9em;
+    }
+
+    .circle{
+        width: 315px;
+        height: 315px;
+    }
+    
+    #avatar{
+        width: 315px;
+        height: 265px;
+    }
+}
+
+@media screen and (1200px < width < 1300px) {
+
+    .headline{
+        font-size: 1.6em;
+    }
+
+    .hv-home-col1-div1{
+        font-size: 2.5em;
+    }
+
+    .hv-home-col1-div2{
+        font-size: 1.25em;
+    }
+
+    .portfolio-btn{
+        font-size: 0.95em;
     }
 
     .circle{
@@ -195,22 +251,7 @@
     }
 }
 
-@media screen and (1200px <= width <= 1300px) {
-
-    .headline{
-        font-size: 1.6em;
-    }
-
-    .hv-home-col1-div1{
-        font-size: 2.5em;
-    }
-
-    .hv-home-col1-div2{
-        font-size: 1.25em;
-    }
-}
-
-@media screen and (1300px <= width <= 1400px) {
+@media screen and (1300px < width < 1400px) {
 
     .headline{
         font-size: 1.8em;
@@ -222,5 +263,19 @@
 
     .hv-home-col1-div2{
         font-size: 1.3em;
+    }
+
+    .portfolio-btn{
+        font-size: 1em;
+    }
+
+    .circle{
+        width: 340px;
+        height: 340px;
+    }
+    
+    #avatar{
+        width: 340px;
+        height: 280px;
     }
 }

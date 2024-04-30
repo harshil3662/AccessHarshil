@@ -1,14 +1,33 @@
 import '../Css/About.css'
+import { useEffect,useState,useRef } from 'react';
 import { Link } from "react-router-dom"
 
 function About() {
+
+  const [screenSize, setScreenSize] = useState('');
+  const scrollableRef = useRef(null);
+  const [divSize, setDivSize] = useState();
+
+  useEffect(() => {
+    const handleResize = () => {
+      const height = window.innerHeight;
+      setScreenSize(height);
+    };
+
+    const { clientHeight } = scrollableRef.current;
+    setDivSize(clientHeight)
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
-    <div class="container about">
-      <div className='p-xxl-5 p-xl-4 p-lg-3 p-md-2 p-sm-1 p-4 heading d-flex justify-content-center align-items-center'>About Me</div>
+    <div ref={scrollableRef} class="container about" style={divSize >= screenSize ? {height:'fit-content'} : {height: screenSize}}>
+      <div className='p-xxl-5 p-xl-4 p-lg-3 p-md-3 p-sm-3 p-4 heading d-flex justify-content-center align-items-center'>About Me</div>
       <div className='col'>
         <div className='row p-xxl-5 p-xl-4 p-lg-3 p-md-2 p-sm-1 p-2'>
-          <div className='p-2 head d-flex justify-content-xxl-start justify-content-xl-start justify-content-lg-start justify-content-md-center
-          justify-content-sm-center justify-content-center align-items-center'>Intoduction</div>
+          <div className='p-2 head d-flex justify-content-center align-items-center'>Intoduction</div>
           <div className='row'>
             <div className='container d-flex justify-content-center align-items-center'>
               <div className='box'>
@@ -27,14 +46,15 @@ function About() {
             </div>
           </div>
         </div>
-        <div className='row p-5 mt-5'>
-          <div className='p-2 head d-flex justify-content-xxl-start justify-content-xl-start justify-content-lg-start justify-content-md-center
-          justify-content-sm-center justify-content-center align-items-center'>Experience</div>
+        <div className='row p-xxl-5 p-xl-4 p-lg-3 p-md-2 p-sm-1 p-2 mt-xxl-5 mt-xl-5 mt-lg-4 mt-md-3 mt-lg-2 mt-sm-1 mt-0'>
+          <div className='p-2 head d-flex justify-content-center align-items-center'>Experience</div>
           <div className='row'>
             <div className='container d-flex justify-content-center align-items-center'>
               <div className='box'>
                 <div className='ps-4 pt-1'>
-                  <div className='mb-2'><span className='company-name'>Software Lab</span><br/><span className='timeline'>Jun 2021 - Apr 2022</span></div>
+                  <div className='mb-2'>
+                    <span className='company-name'>Software Lab</span><br/><span className='timeline'>Jun 2021 - Apr 2022</span>
+                  </div>
                   <div className='lines'>
                     Design and develop robust backend components for Python applications and APIs using Django and Flask, ensuring efficient and
                     scalable solutions. Implement data fetching mechanisms from databases and third-party APIs to enrich and optimise functionality
@@ -47,9 +67,9 @@ function About() {
             </div>
           </div>
         </div>
-        <div className='row'>
+        <div className='row mt-3'>
           <div className='container d-flex justify-content-center align-items-center'>
-            <a className='portfolio-btn mt-5' href='https://drive.google.com/file/d/1HNVyHXM4Q87DApEYk9HLuwZmW7F5U_yQ/view?usp=sharing'>My Resume</a>
+            <a className='portfolio-btn p-xxl-3 p-xl-3 p-lg-2 p-md-2 p-sm-2 p-2' href='https://drive.google.com/file/d/1HNVyHXM4Q87DApEYk9HLuwZmW7F5U_yQ/view?usp=sharing'>My Resume</a>
           </div>
         </div>
       </div>
