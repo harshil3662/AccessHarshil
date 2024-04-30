@@ -29,7 +29,7 @@
     text-shadow: 2px 4px 4px #3b3b3b;
 }
 
-.name{
+.my-full-name{
     color: #4b87b9;
     text-shadow: 2px 4px 4px #333333;
     display: inline-block;
@@ -59,7 +59,7 @@
     color: #021e36;
 }
 
-.links{
+.social-networks{
     display: grid;
     grid-template-columns: auto auto auto;
     column-gap: 0.5em;
@@ -67,7 +67,7 @@
     height: 2em;
 }
 
-.link-img{
+.network-img{
     width: 2em;
     height: 2em;
 }

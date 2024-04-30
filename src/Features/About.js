@@ -4,13 +4,14 @@ import { Link } from "react-router-dom"
 function About() {
   return (
     <div class="container about">
-      <div className='p-5 heading d-flex justify-content-center align-items-center'>About Me</div>
+      <div className='p-xxl-5 p-xl-4 p-lg-3 p-md-2 p-sm-1 p-4 heading d-flex justify-content-center align-items-center'>About Me</div>
       <div className='col'>
-        <div className='row box p-5'>
-          <div className='p-2 head d-flex justify-content-start align-items-center'>Intoduction</div>
+        <div className='row p-xxl-5 p-xl-4 p-lg-3 p-md-2 p-sm-1 p-2'>
+          <div className='p-2 head d-flex justify-content-xxl-start justify-content-xl-start justify-content-lg-start justify-content-md-center
+          justify-content-sm-center justify-content-center align-items-center'>Intoduction</div>
           <div className='row'>
             <div className='container d-flex justify-content-center align-items-center'>
-              <div className='introduction'>
+              <div className='box'>
                 <div className='lines ps-4 pt-1'>I'm Harshil Vaghani, a seasoned web developer with over 5 to 6 years of experience specializing in
                   designing and developing websites and web applications for diverse purposes. Throughout my career, I've honed my skills in
                   various web development technologies, including React.js, Node.js, and more. My expertise lies in crafting innovative digital
@@ -26,11 +27,12 @@ function About() {
             </div>
           </div>
         </div>
-        <div className='row box p-5 mt-5'>
-          <div className='p-2 head d-flex justify-content-start align-items-center'>Experience</div>
+        <div className='row p-5 mt-5'>
+          <div className='p-2 head d-flex justify-content-xxl-start justify-content-xl-start justify-content-lg-start justify-content-md-center
+          justify-content-sm-center justify-content-center align-items-center'>Experience</div>
           <div className='row'>
             <div className='container d-flex justify-content-center align-items-center'>
-              <div className='experience'>
+              <div className='box'>
                 <div className='ps-4 pt-1'>
                   <div className='mb-2'><span className='company-name'>Software Lab</span><br/><span className='timeline'>Jun 2021 - Apr 2022</span></div>
                   <div className='lines'>
