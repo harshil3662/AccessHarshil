@@ -1,0 +1,26 @@
+.contact{
+    font-family: "Marcellus", serif;
+}
+
+#name{
+    background-color: transparent;
+    border: 1.5px solid #585858;
+    color: #7b7b7b;
+}
+
+#subject{
+    background-color: transparent;
+    border: 1.5px solid #585858;
+    color: #7b7b7b;
+}
+
+#message{
+    border: 1.5px solid #585858;
+    background-color: transparent;
+    height: 150px;
+    color: #7b7b7b;
+}
+
+#name::placeholder,#subject::placeholder,#message::placeholder{
+    color: #7b7b7b;
+}

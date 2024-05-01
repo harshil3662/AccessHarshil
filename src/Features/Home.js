@@ -3,7 +3,6 @@ import { useState,useEffect,useRef } from "react"
 import '../Css/Home.css'
 
 function Home() {
-
   const [hover1,setHover1] = useState('')
   const [hover2,setHover2] = useState('')
   const [hover3,setHover3] = useState('')
