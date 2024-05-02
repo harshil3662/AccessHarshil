@@ -38,7 +38,7 @@
 }
 
 .timeline{
-    font-size: 1.1em;
+    font-size: 1.2em;
     font-family: "Marcellus", serif;
     font-weight: 500;
     color: #B0C4DE;
@@ -72,11 +72,11 @@
     }
 
     .company-name{
-        font-size: 0.50em;
+        font-size: 0.75em;
     }
     
     .timeline{
-        font-size: 0.50em;
+        font-size: 0.75em;
     }
 }
 
@@ -100,11 +100,11 @@
     }
 
     .company-name{
-        font-size: 0.65em;
+        font-size: 0.8em;
     }
     
     .timeline{
-        font-size: 0.6em;
+        font-size: 0.8em;
     }
 }
 
@@ -128,11 +128,11 @@
     }
 
     .company-name{
-        font-size: 0.75em;
+        font-size: 0.9em;
     }
     
     .timeline{
-        font-size: 0.7em;
+        font-size: 0.9em;
     }
 }
 
@@ -155,11 +155,11 @@
     }
 
     .company-name{
-        font-size: 0.85em;
+        font-size: 1em;
     }
     
     .timeline{
-        font-size: 0.8em;
+        font-size: 1em;
     }
     
 }
@@ -183,11 +183,11 @@
     }
 
     .company-name{
-        font-size: 1em;
+        font-size: 1.1em;
     }
     
     .timeline{
-        font-size: 0.95em;
+        font-size: 1.1em;
     }
     
 }
@@ -215,6 +215,6 @@
     }
     
     .timeline{
-        font-size: 1.1em;
+        font-size: 1.2em;
     }
 }
