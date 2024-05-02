@@ -56,7 +56,7 @@ function Skills() {
             <div className='container-fluid d-flex justify-content-center align-items-center flex-wrap'>
               <div className='skill-name'>MySql</div>
               <div className='skill-name'>MongoDB</div>
-              <div className='skill-name'>PostgreSGL</div>
+              <div className='skill-name'>PostgreSQL</div>
             </div>
           </div>
         </div>

@@ -27,7 +27,7 @@ function Bar({style}) {
 
   return (
     <div className={screenSize < 992 ? 'd-block d-sm-block d-md-block d-lg-none' : 'overflow-hidden'}>
-      <div className='row bar position-relative ms-3 me-3 p-1' style={screenSize < 992 ? {right:'0px'} : style}>
+      <div className='row bar position-relative ms-xxl-3 ms-xl-3 ms-lg-3 ms-md-3 ms-sm-1 ms-1 me-xxl-3 me-xl-3 me-lg-3 me-md-3 me-sm-1 me-1 p-1' style={screenSize < 992 ? {right:'0px'} : style}>
         <Link to={"/"} className={`col link ${selection === 1 ? 'hovered' : ''}`} onClick={()=>{selectionHandler(1)}}>
           <div className='route my-2'>Home</div>
         </Link>

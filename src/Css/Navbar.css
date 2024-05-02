@@ -95,7 +95,7 @@
 @media screen and (width <= 356px) {
 
     .route{
-        font-size: 0.45em;
+        font-size: 0.55em;
     }
     
 }
@@ -103,7 +103,7 @@
 @media screen and (356px <= width <= 576px) {
 
     .route{
-        font-size: 0.55em;
+        font-size: 0.65em;
     }
     
 }
@@ -111,7 +111,7 @@
 @media screen and (576px <= width <= 768px) {
 
     .route{
-        font-size: 0.65em;
+        font-size: 0.75em;
     }
 
 }
@@ -119,7 +119,7 @@
 @media screen and (768px <= width <= 992px) {
 
     .route{
-        font-size: 0.75em;
+        font-size: 0.85em;
     }
 
 }
@@ -127,7 +127,7 @@
 @media screen and (992px <= width <= 1200px) {
 
     .route{
-        font-size: 0.85em;
+        font-size: 0.95em;
     }
     
 }

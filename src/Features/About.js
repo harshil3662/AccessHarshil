@@ -70,7 +70,7 @@ function About() {
         </div>
         <div className='row mt-3'>
           <div className='container d-flex justify-content-center align-items-center'>
-            <a className='portfolio-btn p-xxl-3 p-xl-3 p-lg-2 p-md-2 p-sm-2 p-2' href='https://drive.google.com/file/d/1HNVyHXM4Q87DApEYk9HLuwZmW7F5U_yQ/view?usp=sharing'>My Resume</a>
+            <a className='portfolio-btn p-3 ps-3 pe-3' href='https://drive.google.com/file/d/1HNVyHXM4Q87DApEYk9HLuwZmW7F5U_yQ/view?usp=sharing'>My Resume</a>
           </div>
         </div>
       </div>

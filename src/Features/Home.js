@@ -42,7 +42,7 @@ function Home() {
               <div className='m-xxl-5 m-xl-5 m-lg-4 m-md-4 m-sm-4 m-4 d-flex justify-content-center justify-content-sm-center justify-content-md-center 
                 justify-content-lg-center justify-content-xl-start align-items-center'>
                 <Link to={"/about"}>
-                  <button className='portfolio-btn p-xxl-3 p-xl-3 p-lg-2 p-md-2 p-sm-2 p-2'>About Me</button>
+                  <button className='portfolio-btn ps-3 pe-3 p-xxl-3 p-xl-3 p-lg-2 p-md-3 p-sm-2 p-2'>About Me</button>
                 </Link>
               </div>
               <div className='m-xxl-5 m-xl-5 m-lg-4 m-md-4 m-sm-4 m-4 d-flex justify-content-center justify-content-sm-center justify-content-md-center 

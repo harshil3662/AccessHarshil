@@ -46,7 +46,7 @@
     background-color: #265983;
     color: #c4d5eb;
     font-family: "Marcellus", serif;
-    border-radius: 1em;
+    border-radius: 2em;
     border: none;
     cursor: pointer;
     font-weight: bold;
@@ -92,6 +92,22 @@
     bottom: 0em;
 }
 
+@media screen and (width <= 356px) {
+
+    .hv-home-col1-div2{
+        font-size: 0.7em;
+    }
+
+}
+
+@media screen and (356px <= width <= 576px) {
+
+    .hv-home-col1-div2{
+        font-size: 0.75em;
+    }
+
+}
+
 @media screen and (width <= 576px) {
 
     .col1{
@@ -107,11 +123,11 @@
     }
 
     .hv-home-col1-div2{
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
 
     .portfolio-btn{
-        font-size: 0.6em;
+        font-size: 0.9em;
     }
 
     .social-networks{
@@ -149,10 +165,6 @@
         font-size: 1em;
     }
 
-    .portfolio-btn{
-        font-size: 0.8em;
-    }
-
     .circle{
         width: 240px;
         height: 240px;
@@ -176,10 +188,6 @@
 
     .hv-home-col1-div2{
         font-size: 1em;
-    }
-
-    .portfolio-btn{
-        font-size: 0.8em;
     }
 
     .circle{
@@ -207,10 +215,6 @@
         font-size: 1em;
     }
 
-    .portfolio-btn{
-        font-size: 0.9em;
-    }
-
     .circle{
         width: 315px;
         height: 315px;
@@ -236,10 +240,6 @@
         font-size: 1.25em;
     }
 
-    .portfolio-btn{
-        font-size: 0.95em;
-    }
-
     .circle{
         width: 330px;
         height: 330px;
@@ -263,10 +263,6 @@
 
     .hv-home-col1-div2{
         font-size: 1.3em;
-    }
-
-    .portfolio-btn{
-        font-size: 1em;
     }
 
     .circle{
