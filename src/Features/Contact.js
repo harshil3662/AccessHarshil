@@ -13,7 +13,7 @@ function Contact() {
   const [divSize, setDivSize] = useState();
 
   useEffect(() => {
-    
+    window.scrollTo(0,0)
     const handleResize = () => {
       const height = window.innerHeight;
       setScreenSize(height);
