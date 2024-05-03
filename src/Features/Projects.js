@@ -2,7 +2,15 @@ import { useEffect,useState,useRef } from 'react';
 import '../Css/Projects.css'
 
 function Projects() {
-
+  const projects = [
+    {name:'IOS Application',link:'https://github.com/Group3RepairMate/RepairMate',img:'ios-featured.png'},
+    {name:'MERN Application',link:'https://github.com/harshil3662/repairmate.git',img:'mern-1.png'},
+    {name:'My Portfolio',link:'https://github.com/harshil3662/AccessHarshil.git',img:'portfolio.png'},
+    {name:'ethers.js',link:'https://github.com/harshil3662/chainlink.git',img:'ethers.png'},
+    {name:'Crypto Wallet',link:'https://github.com/harshil3662/crypto-wallet.git',img:'wallet.png'},
+    {name:'Docker & Kubernetes',link:'https://github.com/harshil3662/building-scalable-app.git',img:'dk2.png'},
+    {name:'Hands-On DevOps',link:'https://github.com/harshil3662/devops.git',img:'devops.png'}
+  ]
   const [screenSize, setScreenSize] = useState('');
   const scrollableRef = useRef(null);
   const [divSize, setDivSize] = useState();
@@ -27,62 +35,20 @@ function Projects() {
       <div className='text-center heading mt-5'>Projects</div>
         <div className='row d-flex justify-content-center align-items-center mt-5'>
           <div className='container d-inline-flex justify-content-center align-items-center flex-wrap'>
-            <div className='project m-3 p-3'>
-              <div className='image-box'>
-                <img src="ios-featured.png" className='img' alt="..."/>
-              </div>
-              <div className='mt-3 text-xxl-start text-xl-start text-lg-start text-md-start text-sm-center text-center'>
-                <a href='https://github.com/Group3RepairMate/RepairMate' className='project-name'>IOS Application</a>
-              </div>
-            </div>
-            <div className='project m-3 p-3'>
-              <div className='image-box'>
-                <img src="mern-1.png" className='img' alt="..."/>
-              </div>
-              <div className='mt-3 text-xxl-start text-xl-start text-lg-start text-md-start text-sm-center text-center'>
-                <a href='https://github.com/harshil3662/repairmate.git' className='project-name'>MERN Application</a>
-              </div>
-            </div>
-            <div className='project m-3 p-3'>
-              <div className='image-box'>
-                <img src="portfolio.png" className='img' alt="..."/>
-              </div>
-              <div className='mt-3 text-xxl-start text-xl-start text-lg-start text-md-start text-sm-center text-center'>
-                <a href='https://github.com/harshil3662/AccessHarshil.git' className='project-name'>My Portfolio</a>
-              </div>
-            </div>
-            <div className='project m-3 p-3'>
-              <div className='image-box'>
-                <img src="ethers.png" className='img' alt="..."/>
-              </div>
-              <div className='mt-3 text-xxl-start text-xl-start text-lg-start text-md-start text-sm-center text-center'>
-                <a href='https://github.com/harshil3662/chainlink.git' className='project-name'>ethers.js</a>
-              </div>
-            </div>
-            <div className='project m-3 p-3'>
-              <div className='image-box'>
-                <img src="wallet.png" className='img' alt="..."/>
-              </div>
-              <div className='mt-3 text-xxl-start text-xl-start text-lg-start text-md-start text-sm-center text-center'>
-                <a href='https://github.com/harshil3662/crypto-wallet.git' className='project-name'>Crypto Wallet</a>
-              </div>
-            </div>
-            <div className='project m-3 p-3'>
-              <div className='image-box'>
-                <img src="dk2.png" className='img' alt="..."/>
-              </div>
-              <div className='mt-3 text-xxl-start text-xl-start text-lg-start text-md-start text-sm-center text-center'>
-                <a href='https://github.com/harshil3662/building-scalable-app.git' className='project-name'>Docker & Kubernetes</a>
-              </div>
-            </div>
-            <div className='project m-3 p-3'>
-              <div className='image-box'>
-                <img src="devops.png" className='img' alt="..."/>
-              </div>
-              <div className='mt-3 text-xxl-start text-xl-start text-lg-start text-md-start text-sm-center text-center'>
-                <a href='https://github.com/harshil3662/devops.git' className='project-name'>Hands-On DevOps</a>
-              </div>
-            </div>
+            {
+              projects.map(i=>{
+                return (
+                  <a href={i.link} className='project m-3 p-3'>
+                    <div className='image-box'>
+                      <img src={i.img} className='img' alt="..."/>
+                    </div>
+                    <div className='mt-3 text-xxl-start text-xl-start text-lg-start text-md-start text-sm-center text-center'>
+                      <div className='project-name'>{i.name}</div>
+                    </div>
+                  </a>
+                )
+              })
+            }
           </div>
         </div>
     </div>
