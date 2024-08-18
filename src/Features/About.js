@@ -54,7 +54,8 @@ function About() {
               <div className='box'>
                 <div className='ps-4 pt-1'>
                   <div className='mb-2'>
-                    <span className='company-name'>Software Lab</span><br/><span className='timeline'>Jun 2021 - Apr 2022</span>
+                    <span className='company-name'>Python Developer @Software Lab</span><br/>
+                    <span className='timeline'>Jun 2021 - Apr 2022</span>
                   </div>
                   <div className='lines'>
                     Design and develop robust backend components for Python applications and APIs using Django and Flask, ensuring efficient and
