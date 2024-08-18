@@ -52,7 +52,7 @@ function Home() {
                       <div className='row'>
                         <div className='col'>
                           <a href='https://github.com/harshil3662' onMouseOver={()=>{setHover1('hovered')}} onMouseOut={()=>{setHover1('')}}>
-                            {hover1 ? <img className='network-img img-fluid' src='github1.png' alt='github'/> : <img className='network-img img-fluid' src='github.png' alt='github'/>}
+                            {hover1 ? <img className='network-img img-fluid' src='github.png' alt='github'/> : <img className='network-img img-fluid' src='github1.png' alt='github'/>}
                           </a>
                         </div>
                       </div>
@@ -61,7 +61,7 @@ function Home() {
                       <div className='row'>
                         <div className='col'>
                           <a href='https://www.linkedin.com/in/harshil-vaghani/' onMouseOver={()=>{setHover2('hovered')}} onMouseOut={()=>{setHover2('')}}>
-                            {hover2 ? <img className='network-img img-fluid' src='linkedin1.png' alt='linkedin'/> : <img className='network-img img-fluid' src='linkedin.png' alt='linkedin'/>}
+                            {hover2 ? <img className='network-img img-fluid' src='linkedin.png' alt='linkedin'/> : <img className='network-img img-fluid' src='linkedin1.png' alt='linkedin'/>}
                           </a>
                         </div>
                       </div>
@@ -70,7 +70,7 @@ function Home() {
                       <div className='row'>
                         <div className='col'>
                           <a href='https://www.instagram.com/_harshilvaghani_/' onMouseOver={()=>{setHover3('hovered')}} onMouseOut={()=>{setHover3('')}}>
-                            {hover3 ? <img className='network-img img-fluid' src='instagram1.png' alt='instagram'/> : <img className='network-img img-fluid' src='instagram.png' alt='instagram'/>}
+                            {hover3 ? <img className='network-img img-fluid' src='instagram.png' alt='instagram'/> : <img className='network-img img-fluid' src='instagram1.png' alt='instagram'/>}
                           </a>
                         </div>
                       </div>

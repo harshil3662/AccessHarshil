@@ -55,15 +55,14 @@ function Navbar() {
   const [icon,setIcon] = useState('more_horiz');
 
   const toggleVisibility = () => {
-    if (isVisible === true) {
-      setIsVisible(!isVisible);
-      setStyle({right:'0px',transition:'right 0.8s ease'})
-      setIcon('close')
+    if (isVisible) {
+      setStyle({ right: '-450px', transition: 'right 0.8s ease' });
+      setIcon('more_horiz');
     } else {
-      setIsVisible(!isVisible);
-      setStyle({right:'-450px',transition:'right 0.8s ease'})
-      setIcon('more_horiz')
+      setStyle({ right: '0px', transition: 'right 0.8s ease' });
+      setIcon('close');
     }
+    setIsVisible(!isVisible);
   };
 
   return (
