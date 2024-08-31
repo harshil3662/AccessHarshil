@@ -35,7 +35,7 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const { name, subject, message } = formData;
-    const mailtoLink = `mailto:hv3662@gmail.com?subject=${encodeURIComponent(subject)}
+    const mailtoLink = `mailto:hvaghani3662@gmail.com?subject=${encodeURIComponent(subject)}
     &body=${encodeURIComponent(`Hello Harshil,\n I am ${name}. ${message}`)}`;
     window.location.href = mailtoLink;
   };
