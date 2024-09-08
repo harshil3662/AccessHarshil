@@ -71,7 +71,7 @@ function About() {
         </div>
         <div className='row mt-3'>
           <div className='container d-flex justify-content-center align-items-center'>
-            <a className='portfolio-btn ps-3 pe-3 p-xxl-3 p-xl-3 p-lg-2 p-md-3 p-sm-2 p-2' href='https://drive.google.com/file/d/16C_Z9ZePgDZuK7rRYug7MNtT3wk8kl-G/view?usp=sharing'>My Resume</a>
+            <a className='portfolio-btn ps-3 pe-3 p-xxl-3 p-xl-3 p-lg-2 p-md-3 p-sm-2 p-2' href='https://drive.google.com/file/d/1RTfu5D70xjgko1ep5bBhNJ6-_swAkXaP/view?usp=sharing'>My Resume</a>
           </div>
         </div>
       </div>
