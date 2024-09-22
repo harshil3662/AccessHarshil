@@ -9,7 +9,7 @@ function Skills() {
     },
     {
       name:'Backend',
-      skills:['Node Js','Express Js','web3.js','ethers.js','Hardhat']
+      skills:['Node Js','Express Js','web3.js','JWT','REST APIs','Django','Flask']
     },
     {
       name:'Database',
@@ -37,12 +37,12 @@ function Skills() {
     handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  }, [screenSize]);
 
   return (
     <div ref={scrollableRef} className='container skills' style={divSize >= screenSize ? {height:'fit-content'} : {height: screenSize}}>
       <div className='text-center heading mt-5'>Skills</div>
-      <div className='row d-flex justify-content-center align-items-stretch mt-5'>
+      <div className='row d-flex justify-content-center align-items-stretch mt-5 mb-5'>
         {
           skills.map(i=>{
             return (

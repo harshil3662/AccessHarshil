@@ -7,7 +7,7 @@
     font-family: "Kalnia", serif;
     font-weight: 400;
     font-style: normal;
-    color: white;
+    color: #3CB371;
 }
 
 .head{
@@ -15,11 +15,11 @@
     font-family: "Kalnia", serif;
     font-weight: 400;
     font-style: normal;
-    color: #4b87b9;
+    color: #2E8B57;
 }
 
 .box{
-    border-left: 3px solid #B0C4DE;
+    border-left: 3px solid #2E8B57;
     width: 65%;
 }
 
@@ -34,14 +34,14 @@
     font-size: 1.2em;
     font-family: "Marcellus", serif;
     font-weight: 800;
-    color: #B0C4DE;
+    color: #3CB371;
 }
 
 .timeline{
     font-size: 1.2em;
     font-family: "Marcellus", serif;
     font-weight: 500;
-    color: #B0C4DE;
+    color: #3CB371;
 }
 
 .links{
@@ -49,7 +49,7 @@
     font-family: "Marcellus", serif;
     font-size: 1em;
     text-decoration: underline;
-    color: #4b87b9;
+    color: #3CB371;
 }
 
 @media screen and (width <= 576px) {

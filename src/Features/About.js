@@ -32,7 +32,7 @@ function About() {
           <div className='row'>
             <div className='container d-flex justify-content-center align-items-center'>
               <div className='box'>
-                <div className='lines ps-4 pt-1'>I'm Harshil Vaghani, a seasoned web developer with over 1 to 2 years of professional and hands on experience specializing in
+                <div className='lines ps-4 pt-1'>I'm Harshil Vaghani, a seasoned web developer with over 2 to 3 years of professional with hands on experience specializing in
                   designing and developing websites and web applications for diverse purposes. Throughout my career, I've honed my skills in
                   various web development technologies, including React.js, Node.js, and more. My expertise lies in crafting innovative digital
                   solutions that not only meet but exceed client expectations. I'm dedicated to staying updated with the latest trends and

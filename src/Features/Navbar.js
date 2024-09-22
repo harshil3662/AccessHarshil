@@ -27,7 +27,7 @@ function Bar({style}) {
 
   return (
     <div className={screenSize < 992 ? 'd-block d-sm-block d-md-block d-lg-none' : 'overflow-hidden'}>
-      <div className='row bar position-relative ms-xxl-3 ms-xl-3 ms-lg-3 ms-md-3 ms-sm-0 ms-0 me-xxl-3 me-xl-3 me-lg-3 me-md-3 me-sm-0 me-0 p-1' style={screenSize < 992 ? {right:'0px'} : style}>
+      <div className='row bar position-relative ms-xxl-3 ms-xl-3 ms-lg-3 ms-md-3 ms-sm-0 ms-0 me-xxl-3 me-xl-3 me-lg-3 me-md-3 me-sm-0 me-0 p-2' style={screenSize < 992 ? {right:'0px'} : style}>
         <Link to={"/"} className={`col link ${selection === 1 ? 'hovered' : ''}`} onClick={()=>{selectionHandler(1)}}>
           <div className='route my-2'>Home</div>
         </Link>
@@ -52,27 +52,24 @@ function Navbar() {
 
   const [isVisible, setIsVisible] = useState(false);
   const [style, setStyle] = useState({});
-  const [icon,setIcon] = useState('more_horiz');
 
   const toggleVisibility = () => {
     if (isVisible) {
-      setStyle({ right: '-450px', transition: 'right 0.8s ease' });
-      setIcon('more_horiz');
+      setStyle({ right: '-450px', transition: 'right 0.5s ease-in' });
     } else {
-      setStyle({ right: '0px', transition: 'right 0.8s ease' });
-      setIcon('close');
+      setStyle({ right: '0px', transition: 'right 0.5s ease-out' });
     }
     setIsVisible(!isVisible);
   };
 
   return (
-    <div className="hv-nav sticky-top">
+    <div className="hv-nav border-0 sticky-top">
       <div className='navbar'>
         <div className='container-fluid d-flex justify-content-center align-items-center p-1'>
           <div className='col-xxl-5 col-xl-5 col-lg-5 col-md-10 col-sm-10 col-10 d-flex justify-content-xxl-start justify-content-xl-start 
           justify-content-lg-start justify-content-md-center center-content-sm-center justify-content-center align-items-center'>
-            <Link className='logo' to={"/"}>
-              <label className='name'>Harshil</label> <label className='dot'>.</label>
+            <Link className='logo m-2 ps-4 pe-4 pt-1 pb-1' to={"/"}>
+              <label className='name'>Harshil</label>
             </Link>
           </div>
           <div className='col-xxl-6 col-xl-6 col-lg-6 col-md-10 col-sm-10 col-10 d-flex justify-content-xxl-end justify-content-xl-end 
@@ -80,7 +77,7 @@ function Navbar() {
             <Bar style={style}/>
             <div className='d-none d-sm-none d-md-none d-lg-block'>
               <button className='toggle-btn' onClick={toggleVisibility}>
-                <span class="material-symbols-outlined toggle ">{ icon } </span>
+                {isVisible ? <i className="bi bi-x fs-1"></i> : <i className='bi bi-filter-left fs-1'></i>}
               </button>
             </div>
           </div>

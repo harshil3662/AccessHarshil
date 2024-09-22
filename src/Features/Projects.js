@@ -8,7 +8,7 @@ function Projects() {
     {name:'My Portfolio',link:'https://github.com/harshil3662/AccessHarshil.git',img:'portfolio.png'},
     {name:'ethers.js',link:'https://github.com/harshil3662/chainlink.git',img:'ethers.png'},
     {name:'Crypto Wallet',link:'https://github.com/harshil3662/crypto-wallet.git',img:'wallet.png'},
-    {name:'Docker & Kubernetes',link:'https://github.com/harshil3662/building-scalable-app.git',img:'dk2.png'},
+    {name:'Docker & Kubernetes',link:'https://github.com/harshil3662/building-scalable-app.git',img:'dk.png'},
     {name:'Hands-On DevOps',link:'https://github.com/harshil3662/devops.git',img:'devops.png'}
   ]
   const [screenSize, setScreenSize] = useState('');
