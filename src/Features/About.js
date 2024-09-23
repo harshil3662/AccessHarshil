@@ -25,7 +25,14 @@ function About() {
 
   return (
     <div ref={scrollableRef} class="container about" style={divSize >= screenSize ? {height:'fit-content'} : {height: screenSize}}>
-      <div className='p-xxl-5 p-xl-4 p-lg-3 p-md-3 p-sm-3 p-4 heading d-flex justify-content-center align-items-center'>About Me</div>
+      <div className='mt-5 heading d-flex justify-content-center align-items-center'>About Me</div>
+      <hr style={{
+        color: '#000',
+        backgroundColor: '#008080',
+        height: 3,
+        border: 'none',
+        margin: '20px 0',
+      }}/>
       <div className='col'>
         <div className='row p-xxl-5 p-xl-4 p-lg-3 p-md-2 p-sm-1 p-2'>
           <div className='p-2 head d-flex justify-content-center align-items-center'>Intoduction</div>

@@ -7,7 +7,7 @@
     font-family: "Kalnia", serif;
     font-weight: 400;
     font-style: normal;
-    color: #3CB371;
+    color: #20B2AA;
 }
 
 .head{
@@ -15,11 +15,11 @@
     font-family: "Kalnia", serif;
     font-weight: 400;
     font-style: normal;
-    color: #2E8B57;
+    color: #BC8F8F;
 }
 
 .box{
-    border-left: 3px solid #2E8B57;
+    border-left: 3px solid #008080;
     width: 65%;
 }
 
@@ -27,21 +27,21 @@
     font-size: 1.2em;
     font-weight: 300;
     font-family: "Marcellus", serif;
-    color: white;
+    color: #E6E6FA;
 }
 
 .company-name{
     font-size: 1.2em;
     font-family: "Marcellus", serif;
     font-weight: 800;
-    color: #3CB371;
+    color: #A9A9A9;
 }
 
 .timeline{
     font-size: 1.2em;
     font-family: "Marcellus", serif;
     font-weight: 500;
-    color: #3CB371;
+    color: #A9A9A9;
 }
 
 .links{
@@ -49,7 +49,7 @@
     font-family: "Marcellus", serif;
     font-size: 1em;
     text-decoration: underline;
-    color: #3CB371;
+    color: #20B2AA;
 }
 
 @media screen and (width <= 576px) {
@@ -68,7 +68,7 @@
     }
 
     .lines{
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
 
     .company-name{
@@ -96,7 +96,7 @@
     }
 
     .lines{
-        font-size: 0.75em;
+        font-size: 0.9em;
     }
 
     .company-name{
@@ -124,7 +124,7 @@
     }
 
     .lines{
-        font-size: 0.85em;
+        font-size: 1em;
     }
 
     .company-name{
@@ -151,7 +151,7 @@
     }
 
     .lines{
-        font-size: 0.95em;
+        font-size: 1.1em;
     }
 
     .company-name{
@@ -179,7 +179,7 @@
     }
 
     .lines{
-        font-size: 1.1em;
+        font-size: 1.2em;
     }
 
     .company-name{
@@ -207,7 +207,7 @@
     }
     
     .lines{
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
 
     .company-name{

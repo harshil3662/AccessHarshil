@@ -23,7 +23,7 @@ function Home() {
   }, []);
 
   return (
-    <div ref={scrollableRef} className='container home' style={divSize >= screenSize ? {height:'fit-content'} : {height: screenSize}}>
+    <div ref={scrollableRef} className='container home mt-5' style={divSize >= screenSize ? {height:'fit-content'} : {height: screenSize}}>
       <div className="col-12">
         <div className='row'>
           <div className='col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 order-2 order-sm-2 order-xs-2 order-md-2

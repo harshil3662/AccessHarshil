@@ -33,24 +33,31 @@ function Projects() {
   return (
     <div ref={scrollableRef} className='container projects' style={divSize >= screenSize ? {height:'fit-content'} : {height: screenSize}}>
       <div className='text-center heading mt-5'>Projects</div>
-        <div className='row d-flex justify-content-center align-items-center mt-5'>
-          <div className='container d-inline-flex justify-content-center align-items-center flex-wrap'>
-            {
-              projects.map(i=>{
-                return (
-                  <a href={i.link} className='project m-3 p-3'>
-                    <div className='image-box'>
-                      <img src={i.img} className='img' alt="..."/>
-                    </div>
-                    <div className='mt-3 text-xxl-start text-xl-start text-lg-start text-md-start text-sm-center text-center'>
-                      <div className='project-name'>{i.name}</div>
-                    </div>
-                  </a>
-                )
-              })
-            }
-          </div>
+      <hr style={{
+        color: '#000',
+        backgroundColor: '#008080',
+        height: 3,
+        border: 'none',
+        margin: '20px 0',
+      }}/>
+      <div className='row d-flex justify-content-center align-items-center mt-5'>
+        <div className='container d-inline-flex justify-content-center align-items-center flex-wrap'>
+          {
+            projects.map(i=>{
+              return (
+                <a href={i.link} className='project m-3 p-3'>
+                  <div className='image-box'>
+                    <img src={i.img} className='img' alt="..."/>
+                  </div>
+                  <div className='mt-3 text-xxl-start text-xl-start text-lg-start text-md-start text-sm-center text-center'>
+                    <div className='project-name'>{i.name}</div>
+                  </div>
+                </a>
+              )
+            })
+          }
         </div>
+      </div>
     </div>
   )
 }

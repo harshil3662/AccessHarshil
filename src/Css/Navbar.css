@@ -1,7 +1,7 @@
 .logo{
     text-decoration: none;
     cursor: pointer;
-    background-color: rgba(0, 100, 0, 0.45);
+    background-color: rgba(0, 91, 91, 0.60);
     backdrop-filter: blur(10px);
     border-radius: 5em;
     transition: 0.5s;
@@ -17,14 +17,14 @@
     font-family: "Kalnia", serif;
     font-weight: 400;
     font-style: normal;
-    color: #4cc180;
+    color: #20B2AA;
     cursor: pointer;
 }
 
 .toggle-btn{
     background-color: transparent;
     border: none;
-    color: #3CB371;
+    color: #E6E6FA;
     transition: 0.3s;
 }
 
@@ -42,37 +42,30 @@
 
 .bar{
     right: -450px;
-    background-color: rgba(0, 100, 0, 0.45);
+    background-color: rgba(0, 91, 91, 0.60);
     border-radius: 5em;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(10px);
 }
 
 .route{
     font-family: "Marcellus", serif;
-    font-size: 1em;
-    color: #4cc180;
+    font-size: 1.1em;
+    color: #20B2AA;
     text-decoration: none;
-    transition: 0.2s;
-}
-
-.link{
     border-radius: 1.5em;
-    text-decoration: none;
+    font-weight: bold;
     cursor: pointer;
 }
 
-.link:hover{
-    /* background-color: rgba(0, 100, 0, 0.15);
-    backdrop-filter: blur(50px); */
-    background-color: #003400;
+.route:hover{
+    color: #20B2AA;
+    background-color: #004141;
     text-decoration: none;
 }
 
 .hovered{
-    /* border-radius: 1.5em;
-    background-color: rgba(0, 100, 0, 0.15); */
-    background-color: #003400;
-    backdrop-filter: blur(50px);
+    color: #20B2AA;
+    background-color: #004141;
 }
 
 @media screen and (width <= 356px) {
@@ -94,7 +87,7 @@
 @media screen and (576px <= width <= 768px) {
 
     .route{
-        font-size: 0.75em;
+        font-size: 0.8em;
     }
 
 }
@@ -102,7 +95,7 @@
 @media screen and (768px <= width <= 992px) {
 
     .route{
-        font-size: 0.85em;
+        font-size: 1em;
     }
 
 }
@@ -110,7 +103,7 @@
 @media screen and (992px <= width <= 1200px) {
 
     .route{
-        font-size: 0.95em;
+        font-size: 1.1em;
     }
     
 }

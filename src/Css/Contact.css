@@ -4,26 +4,26 @@
 
 #name{
     background-color: transparent;
-    border: 1.5px solid #2E8B57;
-    color: #3CB371;
+    border: 1.5px solid #A9A9A9;
+    color: #A9A9A9;
     font-size: 1em;
 }
 
 #subject{
     background-color: transparent;
-    border: 1.5px solid #2E8B57;
-    color: #3CB371;
+    border: 1.5px solid #A9A9A9;
+    color: #A9A9A9;
     font-size: 1em;
 }
 
 #message{
-    border: 1.5px solid #2E8B57;
+    border: 1.5px solid #A9A9A9;
     background-color: transparent;
     height: 150px;
-    color: #3CB371;
+    color: #A9A9A9;
     font-size: 1em;
 }
 
 #name::placeholder,#subject::placeholder,#message::placeholder{
-    color: #3CB371;
+    color: #A9A9A9;
 }

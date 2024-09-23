@@ -42,10 +42,17 @@ function Contact() {
 
   return (
     <div ref={scrollableRef} className='container contact' style={divSize >= screenSize ? {height:'fit-content'} : {height: screenSize}}>
-      <div className='p-xxl-5 p-xl-4 p-lg-3 p-md-3 p-sm-3 p-4 heading d-flex justify-content-center align-items-center'>Contact Me</div>
+      <div className='mt-5 heading d-flex justify-content-center align-items-center'>Contact Me</div>
+      <hr className="mb-5" style={{
+        color: '#000',
+        backgroundColor: '#008080',
+        height: 3,
+        border: 'none',
+        margin: '10px 0',
+      }}/>
       <div className="container">
         <div className="row justify-content-center align-items-center">
-          <div className="col-md-6">
+          <div className="col-md-4">
             <form onSubmit={handleSubmit}>
               <div className="mb-3">
                 <input 

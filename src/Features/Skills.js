@@ -42,6 +42,13 @@ function Skills() {
   return (
     <div ref={scrollableRef} className='container skills' style={divSize >= screenSize ? {height:'fit-content'} : {height: screenSize}}>
       <div className='text-center heading mt-5'>Skills</div>
+      <hr style={{
+        color: '#000',
+        backgroundColor: '#008080',
+        height: 3,
+        border: 'none',
+        margin: '20px 0',
+      }}/>
       <div className='row d-flex justify-content-center align-items-stretch mt-5 mb-5'>
         {
           skills.map(i=>{

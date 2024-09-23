@@ -11,7 +11,6 @@
 }
 
 .project:hover{
-    border: 1px solid #3CB371;
     transform: scale(1.06);
 }
 
@@ -31,7 +30,7 @@
 
 .project-name{
     font-family: "Kalnia", serif;
-    color: #3CB371;
+    color: #E6E6FA;
     font-weight: 500;
     text-decoration: none;
 }
