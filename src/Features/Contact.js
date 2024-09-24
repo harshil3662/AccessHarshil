@@ -46,7 +46,7 @@ function Contact() {
       <hr className="mb-5" style={{
         color: '#000',
         backgroundColor: '#008080',
-        height: 3,
+        height: 5,
         border: 'none',
         margin: '10px 0',
       }}/>

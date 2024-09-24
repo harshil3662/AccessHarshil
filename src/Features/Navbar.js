@@ -74,7 +74,7 @@ function Navbar() {
               </div>
             </Link>
           </div>
-          <div className='col-xxl-6 col-xl-6 col-lg-6 col-md-10 col-sm-10 col-10 d-flex justify-content-xxl-end justify-content-xl-end 
+          <div className='col-xxl-6 col-xl-6 col-lg-6 col-md-10 col-sm-11 col-12 d-flex justify-content-xxl-end justify-content-xl-end 
           justify-content-lg-end justify-content-md-center justify-content-sm-center justify-content-center align-items-center'>
             <Bar style={style}/>
             <div className='d-none d-sm-none d-md-none d-lg-block'>
