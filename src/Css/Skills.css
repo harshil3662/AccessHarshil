@@ -1,10 +1,9 @@
 .skill-box{
     border-radius: 1em;
-    background-color: rgba(0, 91, 91, 0.20);
 }
 
 .skill-secction-name{
-    color: #BC8F8F;
+    color: #20B2AA;
     font-size: 1.5em;
     font-family: "Kalnia", serif;
     font-weight: 400;
@@ -18,10 +17,10 @@
     font-size: 1em;
     border-radius: 1.5em;
     width: fit-content;
-    background: none;
-    color: #4682B4;
+    background-color: rgba(0, 91, 91, 0.20);
+    color: #20B2AA;
     transition: 0.3s;
-    border: 1px solid #4682B4;
+    border: 1px solid #20B2AA;
 }
 
 .skill-name:hover{

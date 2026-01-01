@@ -3,27 +3,51 @@
 }
 
 #name{
-    background-color: transparent;
-    border: 1.5px solid #A9A9A9;
-    color: #A9A9A9;
+    background-color: rgba(0, 91, 91, 0.20);
+    border: none;
+    color: #20B2AA;
     font-size: 1em;
+}
+
+#name:focus, #name:hover{
+    outline: none;
+    border: none;
+    box-shadow: none;
 }
 
 #subject{
-    background-color: transparent;
-    border: 1.5px solid #A9A9A9;
-    color: #A9A9A9;
+    background-color: rgba(0, 91, 91, 0.20);
+    border: none;
+    color: #20B2AA;
     font-size: 1em;
+}
+
+#subject:focus, #subject:hover{
+    outline: none;
+    border: none;
+    box-shadow: none;
 }
 
 #message{
-    border: 1.5px solid #A9A9A9;
-    background-color: transparent;
+    border: none;
+    background-color: rgba(0, 91, 91, 0.20);
     height: 150px;
-    color: #A9A9A9;
+    color: #20B2AA;
     font-size: 1em;
 }
 
+#message:focus, #message:hover{
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
 #name::placeholder,#subject::placeholder,#message::placeholder{
-    color: #A9A9A9;
+    color: #20B2AA;
+}
+
+.form-control:focus, .form-control:hover{
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
 }

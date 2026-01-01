@@ -16,7 +16,7 @@
 
 .hv-home-col1-div1{
     font-family: "Kalnia", serif;
-    color: #BC8F8F;
+    color: #20B2AA;
     font-size: 3em;
 }
 
@@ -33,8 +33,8 @@
 
 .portfolio-btn{
     font-size: 1em;
-    background-color: #4682B4;
-    color: #003400;
+    background-color: #0d958e;
+    color: black;
     font-family: "Marcellus", serif;
     border-radius: 2em;
     border: none;
@@ -42,13 +42,13 @@
     font-weight: bold;
     transition: 0.3s;
     text-decoration: none;
-    border: 1px solid #4682B4;
+    border: 1px solid #0d958e;
 }
 
 .portfolio-btn:hover{
-    border: 1px solid #4682B4;
+    border: 1px solid #20B2AA;
     background: none;
-    color: #4682B4;
+    color: #20B2AA;
 }
 
 .social-networks{
@@ -57,7 +57,7 @@
 }
 
 .icons{
-    color: #A9A9A9;
+    color: #006565;
 }
 
 .circle{
