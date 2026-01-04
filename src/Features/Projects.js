@@ -3,6 +3,7 @@ import '../Css/Projects.css'
 
 function Projects() {
   const projects = [
+    {name: 'MantraFlex Physiotherapy & Wellness',link:'https://mantraflex.com/',img:'wellness.png'},
     {name:'IOS Application',link:'https://github.com/Group3RepairMate/RepairMate',img:'ios-featured.png'},
     {name:'MERN Application',link:'https://github.com/harshil3662/repairmate.git',img:'mern-1.png'},
     {name:'My Portfolio',link:'https://github.com/harshil3662/AccessHarshil.git',img:'portfolio.png'},
