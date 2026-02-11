@@ -1,16 +1,20 @@
 import { useState,useEffect,useRef } from "react"
 import '../Css/Contact.css'
+import emailjs from '@emailjs/browser'
 
 function Contact() {
 
   const [formData, setFormData] = useState({
       name: '',
+      email: '',
       subject: '',
       message: ''
   });
   const [screenSize, setScreenSize] = useState('');
   const scrollableRef = useRef(null);
   const [divSize, setDivSize] = useState();
+  const [statusMessage, setStatusMessage] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0,0)
@@ -34,10 +38,34 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const { name, subject, message } = formData;
-    const mailtoLink = `mailto:hvaghani3662@gmail.com?subject=${encodeURIComponent(subject)}
-    &body=${encodeURIComponent(`Hello Harshil,\n I am ${name}. ${message}`)}`;
-    window.location.href = mailtoLink;
+    setIsSubmitting(true);
+    setStatusMessage('');
+
+    // Replace these with your actual EmailJS credentials
+    const SERVICE_ID = 'service_0gsqgl1';
+    const TEMPLATE_ID = 'template_wreowhs';
+    const PUBLIC_KEY = '89ZIq2UEhL9tZ59Eh';
+
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      subject: formData.subject,
+      message: formData.message,
+      to_email: 'hvaghani3662@gmail.com'
+    };
+
+    emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY)
+      .then((response) => {
+        console.log('Email sent successfully!', response.status, response.text);
+        setStatusMessage('Message sent successfully! I will get back to you soon.');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+        setIsSubmitting(false);
+      })
+      .catch((error) => {
+        console.error('Failed to send email:', error);
+        setStatusMessage('Failed to send message. Please try again later.');
+        setIsSubmitting(false);
+      });
   };
 
   return (
@@ -61,9 +89,23 @@ function Contact() {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  placeholder="Your Fullname"
+                  placeholder="Your Full Name"
                   className="form-control"
                   autoComplete="off"
+                  required
+                />
+              </div>
+              <div className="mb-3">
+                <input 
+                  id="email"
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="Your Email Address"
+                  className="form-control"
+                  autoComplete="off"
+                  required
                 />
               </div>
               <div className="mb-3">
@@ -76,6 +118,7 @@ function Contact() {
                   placeholder="Query Subject"
                   className="form-control"
                   autoComplete="off"
+                  required
                 />
               </div>
               <div className="mb-3">
@@ -87,11 +130,23 @@ function Contact() {
                   placeholder="Leave your query here"
                   className="form-control"
                   autoComplete="off"
+                  required
                 ></textarea>
               </div>
               <div className="row p-2">
-                <button className="portfolio-btn p-xxl-2 p-xl-2 p-lg-2 p-md-2 p-sm-2 p-2" type="submit">Submit</button>
+                <button 
+                  className="portfolio-btn p-xxl-2 p-xl-2 p-lg-2 p-md-2 p-sm-2 p-2" 
+                  type="submit"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? 'Sending...' : 'Submit'}
+                </button>
               </div>
+              {statusMessage && (
+                <div className={`alert ${statusMessage.includes('success') ? 'alert-success' : 'alert-danger'} mt-3`} role="alert">
+                  {statusMessage}
+                </div>
+              )}
             </form>
           </div>
         </div>
