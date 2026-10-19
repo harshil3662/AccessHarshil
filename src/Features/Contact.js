@@ -51,7 +51,7 @@ function Contact() {
       from_email: formData.email,
       subject: formData.subject,
       message: formData.message,
-      to_email: 'hvaghani3662@gmail.com'
+      to_email: 'vaghaniharshil11291@gmail.com'
     };
 
     emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY)
